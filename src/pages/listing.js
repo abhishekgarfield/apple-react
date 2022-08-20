@@ -1,8 +1,8 @@
-const Homepage=()=>{
+const Listing=()=>{
     return(
         <>
         </>
     );
 }
 
-export default Homepage;
+export default Listing;

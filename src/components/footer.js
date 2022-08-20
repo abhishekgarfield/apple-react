@@ -1,8 +1,8 @@
-const Homepage=()=>{
+const Footer=()=>{
     return(
         <>
         </>
     );
 }
 
-export default Homepage;
+export default Footer;

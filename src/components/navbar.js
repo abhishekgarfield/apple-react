@@ -1,8 +1,8 @@
-const Homepage=()=>{
+const Navbar=()=>{
     return(
         <>
         </>
     );
 }
 
-export default Homepage;
+export default Navbar;
