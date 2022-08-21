@@ -1,4 +1,654 @@
-body,html{
-padding: 0px;
-margin: 0px;
+body,html
+{
+    padding: 0rem;
+    margin: 0rem;
+  
+    color: white;
+    width: 100%;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+.buy
+{
+    margin: auto;
+    width: fit-content;
+    padding: 2rem 0rem;
+
+}
+.buy a
+{
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #2997ff; 
+}
+/* ------------  cashback section ------------ */
+
+.cashback
+{
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 1rem 0rem;
+}
+.cashback_cont
+{
+    width: fit-content;
+    margin: 0rem auto;
+}
+.cashback_cont p
+{
+    margin: 0rem;
+    text-align: center;
+    font-weight: 300;
+    padding: 0% 11%;
+    font-size: 1.05rem;
+}
+/* ------------  macbook pro section ------------ */
+.mac_pro_book
+{
+    width: 100%;
+    background-image: url("./images/hero_mbp13__f88jcbca0ve6_largetall.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    height: 43rem;
+}
+.mac_pro_title h1
+{
+    font-size:4rem;
+    font-weight: 500;
+    padding-top: 3rem;
+    width: fit-content;
+    margin: auto;
+
+}
+.mac_pro_charge
+{
+    width: fit-content;
+    background-image: url("./images/logo_hero_mbp13__gdqp6kikbxe2_largetall.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 5rem;
+    width: 27rem;
+    margin: auto;
+    background-size: 26rem;
+}
+
+/* ------------   macbook air section ------------ */
+
+.mac_air
+{
+    width: 100%;
+    background-color: white;
+    height: 45rem;
+    color: black;
+    background-size: cover;
+    background-image: url("./images/hero_macbookair__el7scava26mq_largetall.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mac_air_cont1
+{
+    width: 50%;
+    padding: 5% 0% 0% 0%;
+
+}
+.mac_air_title
+{
+    width: fit-content;
+    margin: 0rem auto;
+}
+.mac_air_title h1
+{
+    font-size:4rem;
+    font-weight: 500;
+    padding-top: 7rem;
+    width: fit-content;
+    margin: auto;
+}
+.mac_air_charge
+{
+    background-image: url("./images/logo_hero_macbookair__edl9uovq56wm_largetall.png");
+    width: 18rem;
+    height: 4rem;
+    margin: 0rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mac_available
+{
+    color: silver;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0rem auto;
+    width: fit-content;
+}
+.mac_available p
+{
+    margin: 0.5rem auto;
+}
+
+/* ------------   get airpods ------------ */
+
+.get_airpods
+{
+    width: 100%;
+    height: 50rem;
+    background-image: url("./images/hero_bts__bcuslanw39xe_largetall.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+.get_title ,.get_save , .get_shop
+{
+    width: fit-content;
+    margin: 0rem auto;
+    padding: 1rem 0rem 0rem 0rem;
+}
+.get_title h1
+{
+    font-size:4rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    width: fit-content;
+    margin: 0rem auto; 
+}
+.get_save p
+{
+    width: fit-content;
+    margin: 0rem auto;
+    font-size: 1.7rem;
+    
+}
+
+/* ------------  iphone_watch ------------ */
+
+.iphone_watch
+{
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.iphone
+{
+    width: 50%;
+    background-image: url("./images/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    float: left;
+}
+.iphone_title h1
+{
+    font-size:3rem;
+    font-weight: 500;
+    width: fit-content;
+    margin: 2rem auto 0.2rem auto; 
+    letter-spacing: -2px;
+}
+.pro
+{
+    width: fit-content;
+    margin: 0rem auto;
+    padding: 0.3rem 0rem 0rem 0rem;
+}
+.pro p
+{
+    margin: 0rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.iphone .buy 
+{
+    padding: 0.5rem 0rem;
+    
+}
+.iphone .buy a
+{
+font-size: 1.3rem;
+}
+.watch
+{
+    width: 50%;
+    background-image: url("./images/promo_watch_lte__djeaso7ukrsm_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    float: left;
+}
+.watch_title
+{
+    background-image: url("./images/promo_logo_watch_lte__emrof7zzkriq_large.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 11rem;
+    height: 5rem;
+    background-size: 11rem;
+    margin: 2rem auto 0rem auto;
+}
+.display
+{
+    width: fit-content;
+    margin: auto;
+}
+.display p
+{
+    margin: 0rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.watch .buy
+{
+    padding: 0.5rem 0rem;
+}
+.watch .buy a
+{
+    font-size: 1.3rem; 
+}
+
+/* ------------   air and studio section  ------------ */
+
+.ipad_mac
+{
+    width: 100%;
+    height: 41.5rem;
+    clear: both;
+
+    
+}
+.ipad_cont1
+{
+    width: 47.5%;
+    float: left;
+    height: 40rem;
+    background-image: url("./images/promo_ipadair_avail__ferd4bfpcdm6_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    color: white;
+
+}
+.light
+{
+    margin: auto;
+    width: fit-content;
+}
+.light p
+{
+    margin: 0.5rem auto;
+}
+.ipad_title
+{
+    background-image: url("./images/promo_logo_ipadair__frwnnsqveeye_large.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    width: 11rem;
+    height: 3rem;
+    margin: 4rem auto 0rem auto;
+} 
+.studio_cont2
+{
+    width: 47.5%;
+    float: left;
+    background-image: url("./images/promo_macstudio_avail__byhwkp0o4gty_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    margin: 1rem 1rem 0.5rem 1rem;
+    color: black;
+
+}
+.ipad_mac .buy
+{
+    padding: 0.5rem 0rem;
+}
+.ipad_mac .buy a
+{
+    font-size: 1.3rem; 
+}
+.studio_title
+{
+    width: fit-content;
+    margin: 4rem auto 0rem auto;
+
+}
+.empower
+{
+    width: fit-content;
+    margin:auto
+}
+.empower p
+{
+    margin: 0.5rem auto; 
+}
+.studio_title h1
+{
+
+
+    font-size:3rem;
+    font-weight: 500;
+    width: fit-content;
+    margin: 2rem auto 0.2rem auto; 
+    letter-spacing: -2px;
+
+}
+
+/* ------------   arcade and tv section  ------------ */
+
+.arc_tv
+{
+    width: 100%;
+    height: 41rem;
+    clear: both;
+
+    
+}
+.arc_cont1
+{
+    width: 47.5%;
+    float: left;
+    height: 40rem;
+    background-image: url("./images/tile_arcade_cooking_mama__dasht2wtew02_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    color: white;
+
+}
+.cook
+{
+    margin: auto;
+    width: fit-content;
+}
+.cook p
+{
+    margin: 0.5rem auto;
+    color: black;
+}
+.arc_title
+{
+    background-image: url("./images/logo__dcojfwkzna2q_large.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    width: 11rem;
+    height: 3rem;
+    margin: 4rem auto 0rem auto;
+} 
+.tv_cont2
+{
+    width: 47.5%;
+    float: left;
+    background-image: url("./images/promo_physical__fyh9juzk5umy_large.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+    color:white;
+
+}
+.arc_tv .buy
+{
+    padding: 0.5rem 0rem;
+}
+.arc_tv .buy a
+{
+    font-size: 1.3rem; 
+}
+.tv_title
+{
+    width: 32rem;
+    height: 3rem;
+    background-image: url("./images/logo_light__cfvl40z2nzau_large.png");
+    margin: 4rem auto 0rem auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:6rem;
+
+}
+.rose
+{
+    width: 23rem;
+    background-size: 22rem;
+    height: 8rem;
+    background-image: url("./images/promo_physical_tagline__f8s8ke316uuu_large.png");
+    margin:20rem auto 0rem auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------   footer  ------------ */
+
+footer
+{
+    width: 100%;
+    color: black;
+    background-color:#f5f5f7;
+    overflow: hidden;
+    color:rgb(110, 110, 115);
+    clear: both;
+}
+.foot_cont1
+{
+    margin: 0rem auto;
+    max-width: 1047px; 
+    font-size: 0.8rem;
+}
+.foot_cont2
+{
+   margin: 1rem auto;
+}
+.foot_cont2 p
+{
+    margin: 0rem auto; 
+}
+.foot_cont3
+{
+    width: 100%;
+    overflow: hidden;
+}
+.foot_list1 , .foot_list2 , .foot_list3 , .foot_list4 , .foot_list5
+{
+    width: 20%;
+    float: left;
+}
+.foot_list1 ul , .foot_list2 ul , .foot_list3  ul , .foot_list4 ul  , .foot_list5 ul 
+{
+list-style-type:none;
+font-size: 1rem;
+font-weight: 200;
+padding-left: 0rem;
+color: black;
+
+
+}
+
+.foot_list1 ul li , .foot_list2 ul li  , .foot_list3  ul li  , .foot_list4 ul li  , .foot_list5 ul li 
+{
+    width: 100%;
+    padding: 0.3rem 0rem;
+}
+.hde
+{
+    visibility: collapse;
+}
+.dis
+{
+    display: none;
+}
+
+/* ------------   phone and tab ------------ */
+
+@media screen and  (max-width: 1050px) 
+{
+    .iphone , .watch , .ipad_cont1 , .studio_cont2,.arc_cont1,.tv_cont2, footer
+    {
+        width: 98%;
+        margin: 1%;
+    }
+    .dis
+    {
+display: block;
+    }
+    .nav_cont1
+    {
+        padding: 0% 5%;
+        width: 90%;
+    }
+    .dis ul 
+    {
+        list-style-type:none;
+        background-position: center;
+        display: flex;
+        margin: 0rem auto;
+        width: 100%;
+        padding: 0rem;
+    }
+    .dis ul li
+    {
+        flex:auto;
+        
+    }
+    .dis ul li a
+    {
+        width: 100%;
+        display: block;
+        color: #f5f5f7;
+        text-decoration: none;
+        padding: 0.5rem 0rem;
+        font-size: 1.5rem;
+    }
+    .nav_cont2
+    {
+        display: none;
+        padding: 0rem;
+    }
+    .bag 
+    {
+        background-position: right;
+    }
+    .phon_nav
+    {
+        display: none;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        position:fixed;
+        top: 2.7rem;
+        left:0rem;
+        z-index: 1;
+    }
+   
+    .nav_cont3
+    {
+        height: 100%;
+        overflow: hidden;
+    }
+    .nav_cont3 ul
+    {
+       
+        display:block;
+        height: 100%;
+        padding: 0rem;
+        transition: visibility 0s linear 4s;
+        transition-delay: 0s;
+    }
+    .nav_cont3 ul li
+    {
+        margin: 0rem auto;
+        display: block;
+        height: 44px;
+        width: 80%;
+        border-bottom: 1px solid white;
+    }
+    .nav_cont3 ul li a
+    {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: left;
+        
+
+    }
+    .get_title h1
+    {
+        width: fit-content;
+        font-size: 2rem;
+    }
+    .get_airpods .get_save p
+    {
+        font-size: 1rem;
+    }
+    .buy a
+    {
+        font-size: 1.5rem;
+    }
+    .mac_air_cont1
+    {
+        width: 100%;
+        padding: 0.5rem auto;
+    }
+    .mac_air
+    {
+        background-image: url("./images/hero_macbookair__el7scava26mq_medium_2x.png");
+    }
+    .mac_air_title h1
+    {
+        padding: 0rem;
+    }
+    .buy
+    {
+        padding: 0.5rem;
+    }
+    .mac_pro_book
+    {
+        background-image: url("./images/hero_mbp13__f88jcbca0ve6_small_2x.jpg");
+    }
+   
+    
+
+}
+
+@media screen and (max-width:530px)
+{
+    .mac_pro_charge , .mac_air_charge
+    {
+        background-size: 70%;
+        width: 70%;
+        height: 2.5rem;
+    }
+    .rose
+    {
+        background-size: 70%;
+        width: 70%;
+        height: 7.5rem;
+    }
+    .tv_title
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .mac_air_title h1, .mac_pro_title h1 , .get_title h1
+    {
+        font-size: 1.5rem;
+    }
+    .mac_air , .mac_pro_book , .get_airpods
+    {
+        height: 39rem;
+    }
+
+}
+
+
