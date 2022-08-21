@@ -22,6 +22,124 @@ body,html
     font-size: 1.7rem;
     color: #2997ff; 
 }
+
+
+/* ------------  navbar ---------------*/
+
+.nav-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.nav-cont ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1047px;
+    padding: 0rem;
+    margin: 0rem auto;
+    list-style-type: none;
+}
+.nav-cont ul li{
+    padding: 10px;
+}
+.logo
+{
+    background-image: url("./images/nav_bar/globalnav_apple_image__b5er5ngrzxqq_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+   
+}
+.store
+{
+    background-image: url("./images/nav_bar/globalnav_links_store_image__c7jy08initqq_large.svg"); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.mac
+{
+    background-image: url("./images/nav_bar/globalnav_links_mac_image__dazlko3t9a6a_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+    
+    
+}
+.iPad
+{
+    background-image: url("./images/nav_bar/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.iPhone
+{
+    background-image: url("./images/nav_bar/globalnav_links_iphone_image__ko7x4isga4ia_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.iwatch
+{
+    background-image: url("./images/nav_bar/globalnav_links_watch_image__gkoblojrlsqe_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.airpods
+{
+    background-image: url("./images/nav_bar/globalnav_links_airpods_image__f969s84ivmaa_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.tv
+{
+    background-image: url("./images/nav_bar/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+
+}
+.only
+{
+    background-image: url("./images/nav_bar/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.accessories
+{
+    background-image: url("./images/nav_bar/globalnav_links_accessories_image__edj0wqmfwxyu_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+    
+}
+.support
+{
+    background-image: url("./images/nav_bar/globalnav_links_support_image__bw9kctll7u3m_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.search
+{
+    background-image: url("./images/nav_bar/globalnav_search_image__cbllq1gkias2_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+.bag
+{
+    background-image: url("./images/nav_bar/globalnav_bag_image__yzte50i47ciu_large.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
 /* ------------  cashback section ------------ */
 
 .cashback
@@ -481,7 +599,8 @@ color: black;
 }
 .hde
 {
-    visibility: collapse;
+    visibility:hidden;
+    color: red;
 }
 .dis
 {
@@ -497,91 +616,7 @@ color: black;
         width: 98%;
         margin: 1%;
     }
-    .dis
-    {
-display: block;
-    }
-    .nav_cont1
-    {
-        padding: 0% 5%;
-        width: 90%;
-    }
-    .dis ul 
-    {
-        list-style-type:none;
-        background-position: center;
-        display: flex;
-        margin: 0rem auto;
-        width: 100%;
-        padding: 0rem;
-    }
-    .dis ul li
-    {
-        flex:auto;
-        
-    }
-    .dis ul li a
-    {
-        width: 100%;
-        display: block;
-        color: #f5f5f7;
-        text-decoration: none;
-        padding: 0.5rem 0rem;
-        font-size: 1.5rem;
-    }
-    .nav_cont2
-    {
-        display: none;
-        padding: 0rem;
-    }
-    .bag 
-    {
-        background-position: right;
-    }
-    .phon_nav
-    {
-        display: none;
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        position:fixed;
-        top: 2.7rem;
-        left:0rem;
-        z-index: 1;
-    }
-   
-    .nav_cont3
-    {
-        height: 100%;
-        overflow: hidden;
-    }
-    .nav_cont3 ul
-    {
-       
-        display:block;
-        height: 100%;
-        padding: 0rem;
-        transition: visibility 0s linear 4s;
-        transition-delay: 0s;
-    }
-    .nav_cont3 ul li
-    {
-        margin: 0rem auto;
-        display: block;
-        height: 44px;
-        width: 80%;
-        border-bottom: 1px solid white;
-    }
-    .nav_cont3 ul li a
-    {
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-position: left;
-        
-
-    }
+  
     .get_title h1
     {
         width: fit-content;
