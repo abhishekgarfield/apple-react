@@ -1,11 +1,32 @@
 const Navbar = () => {
+    const handleClick=(e)=>
+    {
+        var el=document.getElementsByClassName("nav-cont");
+        if(el[0].className==="nav-cont")
+        {
+            el[0].className+=" responsive";
+        }
+        else{
+            el[0].className="nav-cont"
+        }
+    }
   return (
     <>
       <div class="nav-cont">
         <ul>
+        <li>
+            <a id="Phone-nav-bar" href="#" onClick={handleClick}>
+              <span class="fa fa-bars"></span>
+            </a>
+          </li>
           <li>
             <a class="logo" href="#">
               <span class="hde">logo</span>
+            </a>
+          </li>
+          <li>
+            <a class="bag1" href="#">
+              <span class="hde">bag</span>
             </a>
           </li>
           <li>
@@ -40,17 +61,17 @@ const Navbar = () => {
           </li>
           <li>
             <a class="tv" href="#">
-              <span class="hde">Tv and Home</span>
+              <span class="hde">TvanHome</span>
             </a>
           </li>
           <li>
             <a class="only" href="#">
-              <span class="hde">Only on Apple</span>
+              <span class="hde">OnlyonApple</span>
             </a>
           </li>
           <li>
             <a class="accessories" href="#">
-              <span class="hde">Accessories</span>
+              <span class="hde">Accesories</span>
             </a>
           </li>
           <li>
@@ -64,7 +85,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a class="bag" href="#">
+            <a class="bag2" href="#">
               <span class="hde">bag</span>
             </a>
           </li>

@@ -14,7 +14,7 @@ body,html
     padding: 2rem 0rem;
 
 }
-.buy a
+.buy span
 {
     text-decoration: none;
     padding: 0rem 1rem;
@@ -28,9 +28,13 @@ body,html
 
 .nav-cont{
     display: flex;
+    position: fixed;
+    width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: black;
+    background-color: rgba(19, 17, 17, 0.955);
+    
+   
 }
 .nav-cont ul{
     display: flex;
@@ -44,6 +48,12 @@ body,html
 .nav-cont ul li{
     padding: 10px;
 }
+
+#Phone-nav-bar{
+    display: none;
+    color: white;
+}
+
 .logo
 {
     background-image: url("./images/nav_bar/globalnav_apple_image__b5er5ngrzxqq_large.svg");
@@ -133,12 +143,15 @@ body,html
     background-repeat: no-repeat;
     width: fit-content;
 }
-.bag
+.bag1,.bag2
 {
     background-image: url("./images/nav_bar/globalnav_bag_image__yzte50i47ciu_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
+}
+.nav-cont ul li:nth-child(3){
+    display: none;
 }
 /* ------------  cashback section ------------ */
 
@@ -147,7 +160,7 @@ body,html
     width: 100%;
     background-color: white;
     color: black;
-    padding: 1rem 0rem;
+    padding: 3rem 0rem 1rem 0rem;
 }
 .cashback_cont
 {
@@ -325,7 +338,7 @@ body,html
     padding: 0.5rem 0rem;
     
 }
-.iphone .buy a
+.iphone .buy span
 {
 font-size: 1.3rem;
 }
@@ -364,7 +377,7 @@ font-size: 1.3rem;
 {
     padding: 0.5rem 0rem;
 }
-.watch .buy a
+.watch .buy span
 {
     font-size: 1.3rem; 
 }
@@ -428,7 +441,7 @@ font-size: 1.3rem;
 {
     padding: 0.5rem 0rem;
 }
-.ipad_mac .buy a
+.ipad_mac .buy span
 {
     font-size: 1.3rem; 
 }
@@ -519,7 +532,7 @@ font-size: 1.3rem;
 {
     padding: 0.5rem 0rem;
 }
-.arc_tv .buy a
+.arc_tv .buy span
 {
     font-size: 1.3rem; 
 }
@@ -616,7 +629,60 @@ color: black;
         width: 98%;
         margin: 1%;
     }
-  
+    .nav-cont ul {
+        display: flex;
+        margin: 0rem;
+        justify-content: flex-start;
+    }
+
+    #Phone-nav-bar{
+        display: block;
+    }
+    .nav-cont ul li:nth-child(3)
+    {
+        display: block;
+    }
+
+    .nav-cont ul li:not(:nth-child(-n+3))
+    {
+        display: none;
+    }
+    .nav-cont.responsive{
+        background-color: rgb(18, 17, 17);
+        position: fixed;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    .nav-cont.responsive ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .nav-cont.responsive ul li:not(:nth-child(-n+3)){
+        display: block;
+        flex: 0 0 85%;
+        margin: auto;
+        padding:1rem 0rem;
+        border-bottom: 1px solid white;
+    }
+    .nav-cont ul li:nth-child(-n+3){
+        flex: 1 0 30%;
+       text-align: center;
+    }
+    .nav-cont ul li:nth-child(3){
+        text-align: right;
+    }
+    .nav-cont ul li:nth-child(1){
+        text-align: left;
+    }
+    .nav-cont.responsive ul li:nth-last-child(-n+2)
+    {
+        display: none;
+    }
+    
+    
     .get_title h1
     {
         width: fit-content;
@@ -626,7 +692,7 @@ color: black;
     {
         font-size: 1rem;
     }
-    .buy a
+    .buy span
     {
         font-size: 1.5rem;
     }
