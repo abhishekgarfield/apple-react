@@ -681,7 +681,9 @@ color: black;
     {
         display: none;
     }
-    
+    .nav-cont.responsive ul li:not(:nth-child(-n+3)):hover{
+       background-color: rgba(211, 211, 211, 0.081);
+    }
     
     .get_title h1
     {

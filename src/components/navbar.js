@@ -15,79 +15,79 @@ const Navbar = () => {
       <div class="nav-cont">
         <ul>
         <li>
-            <a id="Phone-nav-bar" href="#" onClick={handleClick}>
+            <span id="Phone-nav-bar"  onClick={handleClick}>
               <span class="fa fa-bars"></span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="logo" href="#">
+            <span class="logo" >
               <span class="hde">logo</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="bag1" href="#">
+            <span class="bag1" >
               <span class="hde">bag</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="store" href="#">
+            <span class="store" >
               <span class="hde">Store</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="mac" href="#">
+            <span class="mac" >
               <span class="hde">Mac</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="iPad" href="#">
+            <span class="iPad" >
               <span class="hde">iPad</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="iPhone" href="#">
+            <span class="iPhone" >
               <span class="hde">iPhone</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="iwatch" href="#">
+            <span class="iwatch" >
               <span class="hde">Watch</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="airpods" href="#">
+            <span class="airpods" >
               <span class="hde">Airpods</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="tv" href="#">
+            <span class="tv" >
               <span class="hde">TvanHome</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="only" href="#">
+            <span class="only" >
               <span class="hde">OnlyonApple</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="accessories" href="#">
+            <span class="accessories" >
               <span class="hde">Accesories</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="support" href="#">
+            <span class="support" >
               <span class="hde">Support</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="search" href="#">
+            <span class="search" >
               <span class="hde">Search</span>
-            </a>
+            </span>
           </li>
           <li>
-            <a class="bag2" href="#">
+            <span class="bag2" >
               <span class="hde">bag</span>
-            </a>
+            </span>
           </li>
         </ul>
       </div>

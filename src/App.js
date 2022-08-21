@@ -4,10 +4,10 @@ import Listing from "./pages/listing";
 
 const App=()=>{
   return(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route index element={<Homepage />}/>
-        <Route path="/listing" element={ <Listing />}/>
+        <Route path="listing" element={ <Listing />}/>
       </Routes>
     </BrowserRouter>
   );
