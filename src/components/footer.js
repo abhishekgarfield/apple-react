@@ -116,7 +116,7 @@ const Footer=()=>{
                         </div>
                     </div>
                     <div class="foot_cont4">
-                        <p>More ways to shop: Find a retailer near you. Or call  +91-9459163151 .</p>
+                        <p>More ways to shop: Find a retailer near you. Or call  +919459163151 .</p>
                     </div>
                     <hr></hr>
                     <div class="foot_cont5">
