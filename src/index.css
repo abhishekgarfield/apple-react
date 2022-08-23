@@ -650,6 +650,8 @@ color: black;
     .nav-cont.responsive{
         background-color: rgb(18, 17, 17);
         position: fixed;
+        z-index: 12;
+        overflow: scroll;
         display: block;
         width: 100vw;
         height: 100vh;
@@ -668,7 +670,7 @@ color: black;
         border-bottom: 1px solid white;
     }
     .nav-cont ul li:nth-child(-n+3){
-        flex: 1 0 30%;
+        flex: 1 0 26%;
        text-align: center;
     }
     .nav-cont ul li:nth-child(3){
