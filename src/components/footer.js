@@ -2,8 +2,8 @@ const Footer=()=>{
     return(
         <>
             <footer>
-                <div class="foot_cont1">
-                    <div class="foot_cont2">
+                <div className="foot_cont1">
+                    <div className="foot_cont2">
                         <p>
                             ‡Instant cashback of 5% of order value is available for qualifying HDFC Bank Credit Cards & HDFC Credit Card EMI only.
                             Offer is limited to Maximum Instant Cashback Amount of ₹6000 per successful single order of ₹54900 and above.
@@ -34,8 +34,8 @@ const Footer=()=>{
                         </p>
                     </div>
                     <hr></hr>
-                    <div class="foot_cont3">
-                        <div class="foot_list1">
+                    <div className="foot_cont3">
+                        <div className="foot_list1">
                             <ul>
                                 <li><b>Shop and learn</b></li>
                                 <li>Store</li>
@@ -49,7 +49,7 @@ const Footer=()=>{
                                 <li>Accessories</li>
                             </ul>
                         </div>
-                        <div class="foot_list2">
+                        <div className="foot_list2">
                             <ul>
                                 <li><b>Services</b></li>
                                 <li>Apple Music</li>
@@ -68,7 +68,7 @@ const Footer=()=>{
                                 <li>iCloud.com</li>
                             </ul>
                         </div>
-                        <div class="foot_list3">
+                        <div className="foot_list3">
                             <ul>
                                 <li><b>Apple store</b></li>
                                 <li>Ways to buy</li>
@@ -78,7 +78,7 @@ const Footer=()=>{
                                 <li>Shopping help</li>
                             </ul>
                         </div>
-                        <div class="foot_list4">
+                        <div className="foot_list4">
                             <ul>
                                 <li><b>For buisness</b></li>
                                 <li>Apple and buisness</li>
@@ -95,7 +95,7 @@ const Footer=()=>{
                                 <li>Health in Apple watch</li>
                             </ul>
                         </div>
-                        <div class="foot_list5">
+                        <div className="foot_list5">
                             <ul>
                                 <li><b>Apple values</b></li>
                                 <li>Accessability</li>
@@ -115,11 +115,11 @@ const Footer=()=>{
                             </ul>
                         </div>
                     </div>
-                    <div class="foot_cont4">
+                    <div className="foot_cont4">
                         <p>More ways to shop: Find a retailer near you. Or call  +91-9459163151 .</p>
                     </div>
                     <hr></hr>
-                    <div class="foot_cont5">
+                    <div className="foot_cont5">
                         <p>Copyright  &copy; 2022 abhishekgarfield. All rights reserved.</p>
                     </div>
                 </div>
