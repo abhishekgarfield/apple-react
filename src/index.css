@@ -17,6 +17,42 @@ body,html
     padding: 2rem 0rem;
 
 }
+.cashback_cont i{
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 8px;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: skyblue;
+}
+.fa{
+    font-size: 40px; 
+}
+.fa-sun-o
+{
+    font-size: 40px;
+    color: white;
+
+}
+.fa-moon-o
+{
+    color:"black";
+}
+.fa-moon-o:hover{
+    color: grey;
+}
+.fa-sun-o:hover{
+    color: yellow;
+    background-color: yellow;
+}
+.cashback_cont i:hover{
+    border:2px solid grey;
+    background-color: black;
+}
+
 .buy span
 {
     text-decoration: none;
@@ -165,7 +201,7 @@ body,html
 .cashback
 {
     width: 100%;
-    background-color: white;
+    background-color: rgba(255, 250, 240, 0.841);
     color: black;
     padding: 3rem 0rem 1rem 0rem;
 }
@@ -199,9 +235,13 @@ body,html
     height: 43rem;
 }
 .night .mac_pro_book{
+    width: 100%;
     background:linear-gradient(rgba(194, 185, 203, 0.374),rgba(77, 58, 76, 0.14)),url("./images/hero_mbp13__f88jcbca0ve6_largetall.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    height: 43rem;
 }
 .mac_pro_title h1
 {
@@ -248,6 +288,10 @@ body,html
     background-repeat: no-repeat;
 }
 .night .mac_air{
+    width: 100%;
+    height: 45rem;
+    color: black;
+    background-size: cover;
     background:linear-gradient(rgba(64, 62, 62, 0.371),rgba(45, 44, 44, 0.45)),url("./images/hero_macbookair__el7scava26mq_largetall.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -770,6 +814,11 @@ color: white;
         width: fit-content;
         font-size: 2rem;
     }
+    .night .get_title h1
+    {
+        width: fit-content;
+        font-size: 2rem;
+    }
     .get_airpods .get_save p
     {
         font-size: 1rem;
@@ -783,9 +832,21 @@ color: white;
         width: 100%;
         padding: 0.5rem auto;
     }
+    .night .mac_air_cont1
+    {
+        width: 100%;
+        padding: 0.5rem auto;
+    }
     .mac_air
     {
         background-image: url("./images/hero_macbookair__el7scava26mq_medium_2x.png");
+    }
+    .night .mac_air
+    {
+        background:linear-gradient(rgba(64, 62, 62, 0.371),rgba(45, 44, 44, 0.45)),url("./images/hero_macbookair__el7scava26mq_medium_2x.png");
+        background-size:cover;
+        background-position: center;
+    background-repeat: no-repeat;
     }
     .mac_air_title h1
     {
@@ -797,6 +858,9 @@ color: white;
     }
     .mac_pro_book
     {
+        background-image: url("./images/hero_mbp13__f88jcbca0ve6_small_2x.jpg");
+    }
+    .night .mac_pro_book{
         background-image: url("./images/hero_mbp13__f88jcbca0ve6_small_2x.jpg");
     }
    
@@ -812,6 +876,12 @@ color: white;
         width: 70%;
         height: 2.5rem;
     }
+   .night .mac_pro_charge ,.night  .mac_air_charge
+    {
+        background-size: 70%;
+        width: 70%;
+        height: 2.5rem;
+    } 
     .rose
     {
         background-size: 70%;
@@ -827,7 +897,15 @@ color: white;
     {
         font-size: 1.5rem;
     }
+    .night .mac_air_title h1,.night .mac_pro_title h1 ,.night .get_title h1
+    {
+        font-size: 1.5rem;
+    }
     .mac_air , .mac_pro_book , .get_airpods
+    {
+        height: 39rem;
+    }
+    .night .mac_air ,.night .mac_pro_book ,.night .get_airpods
     {
         height: 39rem;
     }

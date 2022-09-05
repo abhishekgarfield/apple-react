@@ -1,17 +1,28 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { click } from "@testing-library/user-event/dist/click";
+import { useEffect } from "react";
 
 const Homepage = () => {
-    try{
-  const el = document.getElementById("dark");
-  el.addEventListener(click, () => {
-    document.body.classList.toggle("night");
-  });}
-  catch(err)
-  {
-    console.log(err);
-  }
+    
+    const hello=()=>{
+        var el=document.getElementById("dark");
+        el.addEventListener("click",()=>{
+            
+
+            document.body.classList.toggle("night")
+            if(el.className=="fa fa-sun-o")
+            {
+                el.className="fa fa-moon-o";
+            }
+            else{
+                el.className="fa fa-sun-o";
+            }
+        })
+    }
+  useEffect(()=>{
+    hello();
+  },[])
   return (
     <>
       <Navbar />
@@ -29,11 +40,27 @@ const Homepage = () => {
               credit cards on orders over ₹54900
             </p>
             <i
-              className="fa fa-sun-o"
+              className="fa fa-moon-o"
               id="dark"
-              style={{ fontSize: 20, color: "red", cursor: "pointer" }}
+              
             ></i>
           </span>
+        </div>
+      </section>
+      
+      <section className="mac_air">
+        <div className="mac_air_cont1">
+          <div className="mac_air_title">
+            <h1>Macbook Air</h1>
+          </div>
+          <div className="mac_air_charge"></div>
+          <div className="mac_available">
+            <p> Available in July</p>
+          </div>
+          <div className="buy">
+            <span>Learn more </span>
+            <span>View pricing </span>
+          </div>
         </div>
       </section>
       <section className="mac_pro_book">
@@ -47,21 +74,6 @@ const Homepage = () => {
           <div className="buy">
             <span>Learn more </span>
             <span>Buy </span>
-          </div>
-        </div>
-      </section>
-      <section className="mac_air">
-        <div className="mac_air_cont1">
-          <div className="mac_air_title">
-            <h1>Macbook Air</h1>
-          </div>
-          <div className="mac_air_charge"></div>
-          <div className="mac_available">
-            <p> Available in July</p>
-          </div>
-          <div className="buy">
-            <span>Learn more </span>
-            <span>View pricing </span>
           </div>
         </div>
       </section>
@@ -82,6 +94,7 @@ const Homepage = () => {
           <span>Get Now </span>
         </div>
       </section>
+      
       <section className="iphone_watch">
         <div className="iphone">
           <div className="iphone_title">
