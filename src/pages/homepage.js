@@ -1,8 +1,12 @@
 import  {Link} from "react-router-dom";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import { useEffect } from "react";
 
 const Homepage=()=>{
+    useEffect(()=>{
+        document.body.classList.toggle("night");
+    })
     return(
         <>
             <Navbar/>
@@ -22,7 +26,7 @@ const Homepage=()=>{
                         <p></p>
                     </div>
                     <div  class="buy">
-                        <Link to=""><span>Learn more </span></Link>
+                        <span>Learn more </span>
                         <span>Buy </span>
                     </div>
                 </div>
