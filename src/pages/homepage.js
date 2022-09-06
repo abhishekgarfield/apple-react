@@ -34,7 +34,7 @@ const Homepage = () => {
         <div className="coupon-frame">
           <i onClick={(e)=>{
             var el = document.querySelector(".coupon");
-            el.style.top = "-100vw";
+            el.style.top = "-100vh";
           }} id="cls"className="fa fa-remove"></i>
           <p>
             Websites color scheme is based on system prefrences but you can
