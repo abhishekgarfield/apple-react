@@ -6,7 +6,6 @@ import { useEffect } from "react";
 const Homepage = () => {
     
   const systemTheme=window.matchMedia("(prefers-color-scheme:dark)").matches;
-  console.log(systemTheme);
   if(systemTheme==true)
   {
     document.body.classList.toggle("night");
@@ -17,15 +16,13 @@ const Homepage = () => {
           document.body.classList.toggle("night");
           
 
-/*
-            document.body.classList.toggle("night")
-            if(el.className=="fa fa-sun-o")
+            if(el.className=="fa fa-moon-o")
             {
-                el.className="fa fa-moon-o";
+              el.className="fa fa-sun-o";
             }
             else{
-                el.className="fa fa-sun-o";
-            }*/
+              el.className="fa fa-moon-o";
+            }
         })
     }
   useEffect(()=>{
@@ -48,7 +45,7 @@ const Homepage = () => {
               credit cards on orders over ₹54900
             </p>
             <i
-              className="fa fa-moon-o"
+              className={systemTheme?'fa fa-sun-o':'fa fa-moon-o'}
               id="dark"
               
             ></i>
