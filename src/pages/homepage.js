@@ -5,11 +5,19 @@ import { useEffect } from "react";
 
 const Homepage = () => {
     
-    const hello=()=>{
+  const systemTheme=window.matchMedia("(prefers-color-scheme:dark)").matches;
+  console.log(systemTheme);
+  if(systemTheme==true)
+  {
+    document.body.classList.toggle("night");
+  }
+  const hello=()=>{
         var el=document.getElementById("dark");
         el.addEventListener("click",()=>{
-            
+          document.body.classList.toggle("night");
+          
 
+/*
             document.body.classList.toggle("night")
             if(el.className=="fa fa-sun-o")
             {
@@ -17,7 +25,7 @@ const Homepage = () => {
             }
             else{
                 el.className="fa fa-sun-o";
-            }
+            }*/
         })
     }
   useEffect(()=>{
