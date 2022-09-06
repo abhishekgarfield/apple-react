@@ -38,8 +38,8 @@ const Homepage = () => {
           }} id="cls"className="fa fa-remove"></i>
           <p>
             Websites color scheme is based on system prefrences but you can
-            change color scheme using
-            <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"} ></i>
+            change color scheme using{" "}
+            <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"} ></i>{" "}
             button
           </p>
 

@@ -31,23 +31,22 @@ body,html
 .fa{
     font-size: 40px; 
 }
-.cashback_cont i > .fa-sun-o
+ .fa-sun-o
 {
     font-size: 40px;
     color: white;
 
 }
-.cashback_cont.fa-moon-o
+.cashback_cont .fa-moon-o
 {
     color:"black";
 }
-.cashback_cont i > .fa-moon-o:hover{
+.fa-moon-o:hover{
     color: grey;
 }
-.cashback_cont i > .fa-sun-o:hover{
+.fa-sun-o:hover{
     color: yellow;
     border-color: yellow;
-    background-color: yellow;
 }
 .cashback_cont i:hover{
     border:2px solid grey;
@@ -240,7 +239,7 @@ body,html
     width:100vw;
     background: rgba(0, 0, 0, 0.645);
     z-index: 40;
-    transition: 0.5s all;
+    transition:0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
     overflow: scroll;
 
 }
@@ -253,6 +252,12 @@ body,html
     flex: 0 0 60%;
     position: relative;
     
+}
+.coupon-frame .fa-sun-o{
+    color: yellow;
+}
+.coupon-frame .fa-moon-o{
+    color: grey;
 }
 .coupon-frame img{
     width: 100%;
