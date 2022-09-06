@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apple-react/static/css/main.ccb35805.css",
-    "main.js": "/apple-react/static/js/main.114cea55.js",
+    "main.css": "/apple-react/static/css/main.fc7b875e.css",
+    "main.js": "/apple-react/static/js/main.6105f23e.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/apple-react/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/promo_physical__fyh9juzk5umy_large.jpg": "/apple-react/static/media/promo_physical__fyh9juzk5umy_large.b681a0ec6e6ec288d4ce.jpg",
     "static/media/fontawesome-webfont.eot": "/apple-react/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -18,6 +18,7 @@
     "static/media/promo_physical_tagline__f8s8ke316uuu_large.png": "/apple-react/static/media/promo_physical_tagline__f8s8ke316uuu_large.482f6318d6daa6b19e5c.png",
     "static/media/promo_ipadair_avail__ferd4bfpcdm6_large.jpg": "/apple-react/static/media/promo_ipadair_avail__ferd4bfpcdm6_large.e8b2ad0bcde32b15a0ad.jpg",
     "static/media/promo_iphone13pro_avail__beadms4ldidu_large.jpg": "/apple-react/static/media/promo_iphone13pro_avail__beadms4ldidu_large.a2fe6bb6bf18b2785815.jpg",
+    "static/media/apple-offers1.jpeg": "/apple-react/static/media/apple-offers1.2b334fd7b95af0bfa2ee.jpeg",
     "static/media/promo_macstudio_avail__byhwkp0o4gty_large.jpg": "/apple-react/static/media/promo_macstudio_avail__byhwkp0o4gty_large.10c473fd76e35d5cf7e7.jpg",
     "static/media/globalnav_links_accessories_image__edj0wqmfwxyu_large.svg": "/apple-react/static/media/globalnav_links_accessories_image__edj0wqmfwxyu_large.297441a113b080b44188.svg",
     "static/media/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg": "/apple-react/static/media/globalnav_links_onlyonapple_image__c4t8k97tougm_large.b7c78bb74adec18e75e0.svg",
@@ -33,11 +34,11 @@
     "static/media/globalnav_search_image__cbllq1gkias2_large.svg": "/apple-react/static/media/globalnav_search_image__cbllq1gkias2_large.cc5d5044479b916878b2.svg",
     "static/media/globalnav_bag_image__yzte50i47ciu_large.svg": "/apple-react/static/media/globalnav_bag_image__yzte50i47ciu_large.41f41d59c15e30fc042c.svg",
     "index.html": "/apple-react/index.html",
-    "main.ccb35805.css.map": "/apple-react/static/css/main.ccb35805.css.map",
-    "main.114cea55.js.map": "/apple-react/static/js/main.114cea55.js.map"
+    "main.fc7b875e.css.map": "/apple-react/static/css/main.fc7b875e.css.map",
+    "main.6105f23e.js.map": "/apple-react/static/js/main.6105f23e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccb35805.css",
-    "static/js/main.114cea55.js"
+    "static/css/main.fc7b875e.css",
+    "static/js/main.6105f23e.js"
   ]
 }
