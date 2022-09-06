@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { click } from "@testing-library/user-event/dist/click";
 import { useEffect } from "react";
+import Code from "../images/apple-offers1.jpeg";
 
 const Homepage = () => {
   const systemTheme = window.matchMedia("(prefers-color-scheme:dark)").matches;
@@ -19,19 +20,29 @@ const Homepage = () => {
       }
     });
   };
-  const showCoupon=()=>{
-    var el=document.querySelector(".coupon");
-    el.style.top="0vw";
-  }
+  const showCoupon = () => {
+    var el = document.querySelector(".coupon");
+    el.style.top = "0vw";
+  };
   useEffect(() => {
     hello();
     showCoupon();
   }, []);
   return (
     <>
-    <div className="coupon">
-      <div className="coupon-frame"></div>
-    </div>
+      <div className="coupon">
+        <div className="coupon-frame">
+          <i id="cls"className="fa fa-remove"></i>
+          <p>
+            Websites color scheme is based on system prefrences but you can
+            change color scheme using{" "}
+            <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"}></i>{" "}
+            button
+          </p>
+
+          <img src={Code} />
+        </div>
+      </div>
       <Navbar />
       <section className="cashback">
         <div className="cashback_cont">

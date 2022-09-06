@@ -31,20 +31,20 @@ body,html
 .fa{
     font-size: 40px; 
 }
-.fa-sun-o
+.cashback_cont i > .fa-sun-o
 {
     font-size: 40px;
     color: white;
 
 }
-.fa-moon-o
+.cashback_cont.fa-moon-o
 {
     color:"black";
 }
-.fa-moon-o:hover{
+.cashback_cont i > .fa-moon-o:hover{
     color: grey;
 }
-.fa-sun-o:hover{
+.cashback_cont i > .fa-sun-o:hover{
     color: yellow;
     border-color: yellow;
     background-color: yellow;
@@ -223,6 +223,13 @@ body,html
     font-weight: 300;
     padding: 0% 11%;
     font-size: 1.05rem;
+    margin: 0rem;
+}
+.night .coupon{
+    background: linear-gradient(rgba(255, 255, 255, 0.279),rgba(0, 0, 0, 0.645))
+}
+.night .coupon-frame{
+    background-color: black;
 }
 .coupon{
     position: fixed;
@@ -231,17 +238,53 @@ body,html
     top:-100vw;
     height: 100vh;
     width:100vw;
-    background-color: rgb(213, 11, 11);
+    background: rgba(0, 0, 0, 0.645);
     z-index: 40;
     transition: 0.5s all;
+    overflow: scroll;
+
 }
 .coupon-frame
-{
-    flex-basis: 80%;
-    background-color: brown;
-    height: 80vh;
+{  display: flex;
+    background-color:aqua;
+    flex-direction: column;
     margin: 10vh auto;
+    padding: 1vh 1vw;
+    flex: 0 0 60%;
+    position: relative;
+    
 }
+.coupon-frame img{
+    width: 100%;
+    height:90%;
+}
+.coupon-frame p{
+    font-weight: bold;
+    color: black;
+}
+.night .coupon-frame p{
+    font-weight: bold;
+    color: white;
+}
+#cls{
+    position: absolute;
+    right: -13px;
+    top:-16px;
+    background-color: rgb(213, 5, 5);
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+#cls:hover{
+    background-color:red;
+}
+.fa-remove:hover{
+    color: white;
+}
+.fa-remove{
+    color: black;
+}
+
 /* ------------  macbook pro section ------------ */
 .mac_pro_book
 {
@@ -422,7 +465,7 @@ body,html
     float: left;
 }
 .night .iphone{
-    background:linear-gradient(rgba(151, 181, 151, 0.371),rgba(45, 44, 44, 0.45)), url("./images/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
+    background:linear-gradient(rgba(151, 181, 151, 0.371),rgba(45, 44, 44, 0.893)), url("./images/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
