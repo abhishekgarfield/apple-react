@@ -6,17 +6,17 @@ import { useEffect } from "react";
 const Homepage = () => {
     
   const systemTheme=window.matchMedia("(prefers-color-scheme:dark)").matches;
-  if(systemTheme==true)
+  if(systemTheme===true)
   {
     document.body.classList.toggle("night");
   }
   const hello=()=>{
         var el=document.getElementById("dark");
-        el.addEventListener("click",()=>{
+        el.addEventListener(click,()=>{
           document.body.classList.toggle("night");
           
 
-            if(el.className=="fa fa-moon-o")
+            if(el.className==="fa fa-moon-o")
             {
               el.className="fa fa-sun-o";
             }
@@ -63,8 +63,8 @@ const Homepage = () => {
             <p> Available in July</p>
           </div>
           <div className="buy">
-            <span>Learn more </span>
-            <span>View pricing </span>
+            <span>Learn more {">"} </span>
+            <span>View pricing {">"} </span>
           </div>
         </div>
       </section>
@@ -77,8 +77,8 @@ const Homepage = () => {
             <p></p>
           </div>
           <div className="buy">
-            <span>Learn more </span>
-            <span>Buy </span>
+            <span>Learn more {">"} </span>
+            <span>Buy  {">"}</span>
           </div>
         </div>
       </section>
@@ -109,8 +109,8 @@ const Homepage = () => {
             <p>Oh. So. Pro.</p>
           </div>
           <div className="buy">
-            <span>Learn more </span>
-            <span>Buy </span>
+            <span>Learn more {">"} </span>
+            <span>Buy  {">"}</span>
           </div>
         </div>
         <div className="watch">
@@ -119,8 +119,8 @@ const Homepage = () => {
             <p>It's our largest display yet.</p>
           </div>
           <div className="buy">
-            <span>Learn more </span>
-            <span>Buy </span>
+            <span>Learn more {">"} </span>
+            <span>Buy  {">"}</span>
           </div>
         </div>
       </section>
@@ -132,8 +132,8 @@ const Homepage = () => {
               <p>Light. Bright. Full of might.</p>
             </div>
             <div className="buy">
-              <span>Learn more </span>
-              <span>Buy </span>
+              <span>Learn more {">"} </span>
+              <span>Buy  {">"}</span>
             </div>
           </div>
         </div>
@@ -145,8 +145,8 @@ const Homepage = () => {
             <p>Empower station</p>
           </div>
           <div className="buy">
-            <span>Learn more </span>
-            <span>Buy </span>
+            <span>Learn more {">"} </span>
+            <span>Buy  {">"}</span>
           </div>
         </div>
       </section>
@@ -158,8 +158,8 @@ const Homepage = () => {
               <p>Cooking Mama: Cuisine!</p>
             </div>
             <div className="buy">
-              <span>Learn more </span>
-              <span>Buy </span>
+              <span>Learn more {">"} </span>
+              <span>Buy  {">"}</span>
             </div>
           </div>
         </div>
