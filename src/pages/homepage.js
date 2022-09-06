@@ -4,32 +4,34 @@ import { click } from "@testing-library/user-event/dist/click";
 import { useEffect } from "react";
 
 const Homepage = () => {
-    
-  const systemTheme=window.matchMedia("(prefers-color-scheme:dark)").matches;
-  if(systemTheme===true)
-  {
+  const systemTheme = window.matchMedia("(prefers-color-scheme:dark)").matches;
+  if (systemTheme === true) {
     document.body.classList.toggle("night");
   }
-  const hello=()=>{
-        var el=document.getElementById("dark");
-        el.addEventListener(click,()=>{
-          document.body.classList.toggle("night");
-          
-
-            if(el.className==="fa fa-moon-o")
-            {
-              el.className="fa fa-sun-o";
-            }
-            else{
-              el.className="fa fa-moon-o";
-            }
-        })
-    }
-  useEffect(()=>{
+  const hello = () => {
+    var el = document.getElementById("dark");
+    el.addEventListener("click", () => {
+      document.body.classList.toggle("night");
+      if (el.className === "fa fa-moon-o") {
+        el.className = "fa fa-sun-o";
+      } else {
+        el.className = "fa fa-moon-o";
+      }
+    });
+  };
+  const showCoupon=()=>{
+    var el=document.querySelector(".coupon");
+    el.style.top="0vw";
+  }
+  useEffect(() => {
     hello();
-  },[])
+    showCoupon();
+  }, []);
   return (
     <>
+    <div className="coupon">
+      <div className="coupon-frame"></div>
+    </div>
       <Navbar />
       <section className="cashback">
         <div className="cashback_cont">
@@ -45,14 +47,13 @@ const Homepage = () => {
               credit cards on orders over ₹54900
             </p>
             <i
-              className={systemTheme?'fa fa-sun-o':'fa fa-moon-o'}
+              className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"}
               id="dark"
-              
             ></i>
           </span>
         </div>
       </section>
-      
+
       <section className="mac_air">
         <div className="mac_air_cont1">
           <div className="mac_air_title">
@@ -78,7 +79,7 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy  {">"}</span>
+            <span>Buy {">"}</span>
           </div>
         </div>
       </section>
@@ -99,7 +100,7 @@ const Homepage = () => {
           <span>Get Now </span>
         </div>
       </section>
-      
+
       <section className="iphone_watch">
         <div className="iphone">
           <div className="iphone_title">
@@ -110,7 +111,7 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy  {">"}</span>
+            <span>Buy {">"}</span>
           </div>
         </div>
         <div className="watch">
@@ -120,7 +121,7 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy  {">"}</span>
+            <span>Buy {">"}</span>
           </div>
         </div>
       </section>
@@ -133,7 +134,7 @@ const Homepage = () => {
             </div>
             <div className="buy">
               <span>Learn more {">"} </span>
-              <span>Buy  {">"}</span>
+              <span>Buy {">"}</span>
             </div>
           </div>
         </div>
@@ -146,7 +147,7 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy  {">"}</span>
+            <span>Buy {">"}</span>
           </div>
         </div>
       </section>
@@ -159,7 +160,7 @@ const Homepage = () => {
             </div>
             <div className="buy">
               <span>Learn more {">"} </span>
-              <span>Buy  {">"}</span>
+              <span>Buy {">"}</span>
             </div>
           </div>
         </div>
