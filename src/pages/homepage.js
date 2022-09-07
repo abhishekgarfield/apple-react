@@ -9,7 +9,7 @@ const Homepage = () => {
   const [systemTheme, setsys] = useState(false);
 
   // Initialize color scheme
-  
+
   const InitialiseColorscheme = () => {
     const systemTheme = window.matchMedia(
       "(prefers-color-scheme:dark)"
@@ -104,16 +104,24 @@ const Homepage = () => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
+              flexGrow:1,
+              justifyContent: "space-around"
             }}
           >
-            <div className="weather">
+            <div className="weather" style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+    flexGrow: 1,
+    justifyContent: "space-around",
+                    }}>
               {weatherData && (
                 <>
                   <span
                     style={{
                       display: "flex",
                       flexDirection: "row",
-                      alignItems: "center",
+                      alignItems:"center"
                     }}
                   >
                     <span style={{paddingRight:"10px",fontWeight:"500"}}>{`${weatherData.city.name } `}</span>
