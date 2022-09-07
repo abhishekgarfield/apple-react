@@ -264,14 +264,14 @@ body,html
 }
 .coupon-frame img{
     width: 100%;
-    height:90%;
+    height:85%;
 }
 .coupon-frame p{
-    font-weight: bold;
+    font-weight: 600;
     color: black;
 }
 .night .coupon-frame p{
-    font-weight: bold;
+    font-weight:600;
     color: white;
 }
 #cls{
@@ -814,7 +814,8 @@ color: white;
 
 /* -----------  weather ----------*/
 
-.weather{
+.fa-cloud{
+    color: aqua;
 }
 
 /* ------------   phone and tab ------------ */

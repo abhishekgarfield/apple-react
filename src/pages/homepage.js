@@ -7,7 +7,10 @@ const Homepage = () => {
   const [error, setError] = useState("");
   const [weatherData, setWeather] = useState("");
   const [systemTheme, setsys] = useState(false);
-  const start = () => {
+
+  // Initialize color scheme
+  
+  const InitialiseColorscheme = () => {
     const systemTheme = window.matchMedia(
       "(prefers-color-scheme:dark)"
     ).matches;
@@ -16,7 +19,10 @@ const Homepage = () => {
       document.body.classList.toggle("night");
     }
   };
-  const hello = () => {
+
+  //Change color scheme (theme)
+
+  const changeTheme = () => {
     var el = document.getElementById("dark");
     el.addEventListener("click", () => {
       document.body.classList.toggle("night");
@@ -27,12 +33,16 @@ const Homepage = () => {
       }
     });
   };
+  // Show coupon
+
   const showCoupon = () => {
     var el = document.querySelector(".coupon");
     el.style.top = "0vw";
   };
+
+  //  Show weather
   const getWeather = () => {
-    if (9 > 0) {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((posittion) => {
         var lat = posittion.coords.latitude;
         var long = posittion.coords.longitude;
@@ -41,30 +51,27 @@ const Homepage = () => {
         fetch(url, { method: "GET" })
           .then((Response) => Response.json())
           .then((data) => {
-            console.log("data response");
-            console.log(data);
             setWeather(data);
-            console.log("response setweather");
-            console.log(weatherData);
           })
           .catch((err) => {
             setError(err);
-            console.log("here");
+            console.log(err);
           });
       });
     } else {
-      console.log("not supported");
-      setError("Not supported");
+      console.log("geo ot supported");
+      setError("Geo Not supported");
     }
   };
+
   useEffect(() => {
-    hello();
+    changeTheme();
     showCoupon();
     getWeather();
   }, []);
-  console.log(weatherData);
+  
   useLayoutEffect(() => {
-    start();
+    InitialiseColorscheme();
   }, []);
   return (
     <>
@@ -79,11 +86,12 @@ const Homepage = () => {
             className="fa fa-remove"
           ></i>
           <p>
-            Websites color scheme is based on system prefrences but you can
+            Websites <span style={{fontWeight:"bold",color:"red"}}>color scheme </span>is based on <span style={{fontWeight:"bold",color:"red"}}>system prefrences</span> but you can
             change color scheme using{" "}
             <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"}></i>{" "}
             button
           </p>
+          <p style={{margin:"0rem",marginBottom:"5px"}}>Includes your current <span style={{fontWeight:"bold",color:"red"}}>Weather and location</span></p>
 
           <img src={Code} />
         </div>
@@ -108,8 +116,8 @@ const Homepage = () => {
                       alignItems: "center",
                     }}
                   >
-                    <span>{`${weatherData.city.name} hi`}</span>
-                    <span className="fa fa-cloud"> </span>
+                    <span style={{paddingRight:"10px",fontWeight:"500"}}>{`${weatherData.city.name } `}</span>
+                    <span style={{paddingRight:"5px"}} className="fa fa-cloud"> </span>
                     <span>
                       {weatherData.list[0].temp.day}
                       <sup>°C</sup>
@@ -118,9 +126,8 @@ const Homepage = () => {
                 </>
               )}
               {error && (
-                <i className="">
-                  <p>error in loading</p>
-                </i>
+                <span className="">
+                </span>
               )}
             </div>
             <p>
