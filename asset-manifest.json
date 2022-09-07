@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apple-react/static/css/main.d67ffa52.css",
-    "main.js": "/apple-react/static/js/main.cdb8eea8.js",
+    "main.css": "/apple-react/static/css/main.b48040fe.css",
+    "main.js": "/apple-react/static/js/main.7bc21fae.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/apple-react/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/promo_physical__fyh9juzk5umy_large.jpg": "/apple-react/static/media/promo_physical__fyh9juzk5umy_large.b681a0ec6e6ec288d4ce.jpg",
     "static/media/fontawesome-webfont.eot": "/apple-react/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -34,11 +34,11 @@
     "static/media/globalnav_search_image__cbllq1gkias2_large.svg": "/apple-react/static/media/globalnav_search_image__cbllq1gkias2_large.cc5d5044479b916878b2.svg",
     "static/media/globalnav_bag_image__yzte50i47ciu_large.svg": "/apple-react/static/media/globalnav_bag_image__yzte50i47ciu_large.41f41d59c15e30fc042c.svg",
     "index.html": "/apple-react/index.html",
-    "main.d67ffa52.css.map": "/apple-react/static/css/main.d67ffa52.css.map",
-    "main.cdb8eea8.js.map": "/apple-react/static/js/main.cdb8eea8.js.map"
+    "main.b48040fe.css.map": "/apple-react/static/css/main.b48040fe.css.map",
+    "main.7bc21fae.js.map": "/apple-react/static/js/main.7bc21fae.js.map"
   },
   "entrypoints": [
-    "static/css/main.d67ffa52.css",
-    "static/js/main.cdb8eea8.js"
+    "static/css/main.b48040fe.css",
+    "static/js/main.7bc21fae.js"
   ]
 }
