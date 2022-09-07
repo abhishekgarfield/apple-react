@@ -224,6 +224,9 @@ body,html
     font-size: 1.05rem;
     margin: 0rem;
 }
+
+/* ------------- couponn pop up --------------*/
+
 .night .coupon{
     background: linear-gradient(rgba(255, 255, 255, 0.279),rgba(0, 0, 0, 0.645))
 }
@@ -807,6 +810,11 @@ color: white;
 .dis
 {
     display: none;
+}
+
+/* -----------  weather ----------*/
+
+.weather{
 }
 
 /* ------------   phone and tab ------------ */

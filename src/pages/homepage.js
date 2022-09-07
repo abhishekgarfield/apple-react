@@ -1,14 +1,21 @@
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import { click } from "@testing-library/user-event/dist/click";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Code from "../images/apple-offers1.jpeg";
 
 const Homepage = () => {
-  const systemTheme = window.matchMedia("(prefers-color-scheme:dark)").matches;
-  if (systemTheme === true) {
-    document.body.classList.toggle("night");
-  }
+  const [error, setError] = useState("");
+  const [weatherData, setWeather] = useState("");
+  const [systemTheme, setsys] = useState(false);
+  const start = () => {
+    const systemTheme = window.matchMedia(
+      "(prefers-color-scheme:dark)"
+    ).matches;
+    setsys(systemTheme);
+    if (systemTheme === true) {
+      document.body.classList.toggle("night");
+    }
+  };
   const hello = () => {
     var el = document.getElementById("dark");
     el.addEventListener("click", () => {
@@ -24,22 +31,57 @@ const Homepage = () => {
     var el = document.querySelector(".coupon");
     el.style.top = "0vw";
   };
+  const getWeather = () => {
+    if (9 > 0) {
+      navigator.geolocation.getCurrentPosition((posittion) => {
+        var lat = posittion.coords.latitude;
+        var long = posittion.coords.longitude;
+
+        var url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&mode=json&units=metric&cnt=5&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`;
+        fetch(url, { method: "GET" })
+          .then((Response) => Response.json())
+          .then((data) => {
+            console.log("data response");
+            console.log(data);
+            setWeather(data);
+            console.log("response setweather");
+            console.log(weatherData);
+          })
+          .catch((err) => {
+            setError(err);
+            console.log("here");
+          });
+      });
+    } else {
+      console.log("not supported");
+      setError("Not supported");
+    }
+  };
   useEffect(() => {
     hello();
     showCoupon();
+    getWeather();
+  }, []);
+  console.log(weatherData);
+  useLayoutEffect(() => {
+    start();
   }, []);
   return (
     <>
       <div className="coupon">
         <div className="coupon-frame">
-          <i onClick={(e)=>{
-            var el = document.querySelector(".coupon");
-            el.style.top = "-100vh";
-          }} id="cls"className="fa fa-remove"></i>
+          <i
+            onClick={(e) => {
+              var el = document.querySelector(".coupon");
+              el.style.top = "-100vh";
+            }}
+            id="cls"
+            className="fa fa-remove"
+          ></i>
           <p>
             Websites color scheme is based on system prefrences but you can
             change color scheme using{" "}
-            <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"} ></i>{" "}
+            <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"}></i>{" "}
             button
           </p>
 
@@ -56,6 +98,31 @@ const Homepage = () => {
               alignItems: "center",
             }}
           >
+            <div className="weather">
+              {weatherData && (
+                <>
+                  <span
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    <span>{`${weatherData.city.name} hi`}</span>
+                    <span className="fa fa-cloud"> </span>
+                    <span>
+                      {weatherData.list[0].temp.day}
+                      <sup>°C</sup>
+                    </span>
+                  </span>
+                </>
+              )}
+              {error && (
+                <i className="">
+                  <p>error in loading</p>
+                </i>
+              )}
+            </div>
             <p>
               Get 5% instant Cashback up to ₹6000 with qualifying HDFC Bank
               credit cards on orders over ₹54900
