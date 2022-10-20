@@ -609,10 +609,10 @@ font-size: 1.3rem;
 {
     width: 47.5%;
     float: left;
-    background-image: url("./images/promo_macstudio_avail__byhwkp0o4gty_large.jpg");
-    background-position: center;
+    background-image: url("https://i.imgur.com/wLRyum7.png");
+    background-position:bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 55%;
     height: 40rem;
     margin: 1rem 1rem 0.5rem 1rem;
     color: black;
@@ -1000,3 +1000,489 @@ color: white;
 }
 
 
+/* ------------- Listing -------------- */
+
+
+#filters
+{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    border-bottom: 1px solid lightgrey;
+}
+.find_options img
+{
+    display: block;
+    width: 2rem;
+    padding: 1rem;
+
+}
+.find_options_img
+{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4rem;
+    height:4rem;
+    float:left;
+    background: rgb(252, 238, 192);
+}
+.find_options span span
+{
+    display: block;
+    padding: 1.2rem;
+    width: fit-content;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#nightlife, #dining
+{
+     background-color:rgba(132, 129, 129, 0.101);
+}
+#find_head_cont3_1 ,#find_head_cont3_2,#find_head_cont3_3
+{
+    display: inline-block;
+    height: 100%;
+    margin: 0rem 0.9rem 0rem 0rem ;
+} 
+#find_head_cont3_1 
+{
+    border-bottom: 2px solid red;
+}
+
+/* filter */
+#find_head_cont4
+{
+    padding: 2rem 0rem;
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
+}
+
+.fiter_buttons
+{
+    width: fit-content;
+    float: left;
+    cursor: pointer;
+    margin-right: 1rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 1px solid rgba(142, 139, 139, 0.684);
+}
+.fiter_buttons span
+{
+    padding: 6px 11px;
+    display: block;
+}
+.fiter_buttons span i
+{
+    margin-right: 6px;
+}
+/* find_inspiration" */
+
+#find_inspiration
+{
+background-color: rgba(243, 243, 243, 0.653);
+}
+#inspi_cont1
+{
+max-width: 1024px;
+width: 90%;
+margin: auto;
+}
+#inspi_head >h1
+{
+font-size: 2rem;
+font-weight: 400;
+margin: 0rem;
+padding-top: 16px;
+}
+
+
+
+/* ------ food_items_display ------ */
+
+
+#food_loading_area
+{
+    color: black;
+width:100%;
+
+}
+.food_loading_area_2
+{
+width: 90%;
+max-width: 1024px;
+overflow: hidden;
+margin: auto;
+padding:1rem;
+display: flex;
+flex-wrap:wrap;
+flex-direction: row;
+justify-content: space-between;
+
+}
+.food_item_card
+{
+flex: 0 0 32%;
+background-color: white;
+overflow: hidden;
+transition: 0.5s all;
+margin: 1rem 0rem;
+border-radius: 10px;
+transition: 0.3s all;
+}
+.night .food_item_card{
+    background-color: black;
+    color: white;
+}
+.food_item_info ,.food_stats
+{
+padding: 10px;
+}
+.food_img {
+margin: 10px;
+margin-top: 10px;
+display: flex;
+justify-content: center;
+background-position: center;
+height: 14rem;
+border-radius: 10px;
+align-items: center;
+}
+.food_img img
+{
+
+height: 12rem;
+display: block;
+transition: 0.5s all;
+border-radius: 10px;
+}
+.food_item_card:hover img{
+    transform: scale(1.1);
+}
+.food_name ,.food_cousine
+{
+overflow: hidden;
+display: flex;
+justify-content: left;
+flex: 70% 30%;
+
+
+}
+.food_name p
+{
+font-size: 18px;
+text-transform:capitalize;
+}
+.food_name p, .food_cousine p
+{
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+margin: 0px;
+
+}
+.food_price p{
+margin:0px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.food_rating,.food_price
+{
+overflow: hidden;
+display: flex;
+flex-wrap: nowrap;
+justify-content: right;
+
+}
+.food_item_info_cont2 ,.food_item_info_cont1{
+
+width: 100%;
+display: flex;
+justify-content: space-between;
+
+
+}
+.food_item_info_cont2 {
+margin-top: 10px;
+}
+.food_rating p{
+background-color: green;
+color: white;
+border-radius: 5px;padding: 3px;
+font-size: small;
+margin:0px;
+white-space:nowrap;
+width: 40px;
+overflow: hidden;
+}
+.food_price p,.food_cousine p
+{
+color: rgb(141, 138, 138);
+font-weight: 200;
+font-size: 14px;
+}
+.food_stats p
+{
+margin: 6px 0px;
+clear: both;
+font-size: 11px;
+
+}
+.food_stats
+{
+margin: 6px ,0px;
+display: flex;
+justify-content: space-between;
+}
+.food_stats > img
+{
+width: 50px;
+height: 20px;
+margin: 6px 0px;
+}
+.food_item_card:hover
+{
+box-shadow: 0px 0px 10px 6px #88888870;
+cursor: pointer;
+}
+
+
+/* ------- show filterrs ----- */
+
+.show_filters
+{
+position: fixed;
+display: none;
+height: 100vh;
+width: 100vw;
+overflow: scroll;
+top: 0px;
+background-color: rgba(0, 0, 0, 0.742);
+}
+.show_filters.sho{
+display: block;
+}
+.show_filters_2
+{
+
+max-width: 660px;
+background-color: white;
+margin: 4rem auto;
+z-index: 11;
+height:30rem;
+border-radius: 10px;
+}
+.show_filters_2 > h1
+{
+float: left;
+font-size: 1.6rem;
+font-weight: 700;
+width: 70%;
+margin:1.8rem 0rem 1.5rem 1rem;
+}
+.show_filters_2 i{
+float: right;
+cursor: pointer;
+margin: 1.3rem 1.3rem 0rem 0rem;
+}
+.tabs
+{
+width: 100%;
+align-items: center;
+overflow: hidden;
+height: 67%;
+border-top: 1px solid lightgrey;
+border-bottom: 1px solid lightgray;
+
+}
+.active{
+background-color:white;
+border-left:0.7rem solid red;
+
+}
+.label.active:hover{
+background-color:white;
+border-left:0.7rem solid red;
+}
+.option.sho{
+display: block;
+
+}
+
+
+.label >h1
+{
+margin: 0px;
+padding-left: 10px;
+font-size: 16px;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.672);
+}
+.labels
+{
+
+width: 30%;
+float: left;
+height: 100%;
+align-items: center;
+display: flex;
+flex-direction: column;
+height: 100%;
+color: rgba(0, 0, 0, 0.82);
+background-color: rgba(211, 211, 211, 0.526);
+}
+.label_output
+{
+width: 68%;
+padding: 1.7rem 0rem;
+float: left;
+color: rgba(0, 0, 0, 0.505);
+height: 100%;
+}
+.label{
+height: 25%;
+width: 100%;
+cursor: pointer;
+align-items: center;
+padding-top: 30px;
+overflow: hidden;
+}
+.label_output form
+{
+display: flex;
+flex-direction: column;
+}
+.label_output form .radios
+{
+margin: 1rem 0rem 0rem 1rem;
+align-items: center;
+
+display: flex;
+}
+.label_output form  div input[type="radio"]
+{
+width: 1.2rem;
+height:1.2rem;
+cursor: pointer;
+margin: 0px 10px;
+color:red;
+background-color: red;
+}
+.label_output form  div input[type="radio"]:checked::after
+{
+width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    right: -3.2px;
+    top:3.4px;
+    
+    position: relative;
+    background-color: red;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+.label_output form .radios  label:before
+{
+width: 1rem;
+    height: 1rem;
+    border-radius: 15px;
+    margin-left: -1.9rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    top: 1.7px;
+    position: relative;
+    background-color:transparent;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid red;
+}
+
+
+
+.label_output #rad  {
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+}
+.label_output #rad .checks{
+flex: 0 0 40%;
+display: flex;
+margin-top: 1rem;
+margin-left: 1rem;
+align-items: center;
+align-self: center;
+}
+.label_output #rad .checks label{
+margin-left: 1rem;}
+.slider {
+-webkit-appearance: none;
+width: 90%;
+height: 13px;
+background: #d3d3d3;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+border-radius: 5px;
+margin-top: 7rem;
+margin-left: 1.3rem;
+}
+
+.slider:hover {
+opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 20px;
+height: 20px;
+
+border-radius: 50%;
+background: red;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+background: red;
+cursor: pointer;
+}
+.bottom_buttons{
+display: flex;
+justify-content: flex-end;
+}
+.bottom_buttons button{
+
+background-color: red;
+color: white;
+border-radius: 10px;
+border: none;
+padding: 10px;
+margin: 20px;
+
+}
+.label:hover
+{
+background-color: rgba(211, 211, 211, 0.45);
+}
+
+
+
+.fiter_buttons:hover
+{
+background-color: rgba(211, 211, 211, 0.332);
+}

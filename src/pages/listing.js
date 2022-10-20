@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const Listing = () => {
@@ -37,6 +37,9 @@ const Listing = () => {
     }
     e.currentTarget.className += " active";
   }
+  useEffect(()=>{
+    loadProducts();
+  },[])
 
   return (
     <>
@@ -131,50 +134,56 @@ const Listing = () => {
       </div>
       <div id="food_loading_area">
         <div className="food_loading_area_2">
-          <div className="food_item_card">
-            <div className="food_img"></div>
-            <div className="food_item_info">
-              <div className="food_item_info_cont1">
-                <div className="food_name">
-                  <p> Bhena da dhaba</p>
+          {Products?.map((data, index) => {
+            return (
+              <div className="food_item_card" key={index}>
+                <div className="food_img">
+                    <img src={data.product_url}/>
                 </div>
-                <div className="food_rating">
+                <div className="food_item_info">
+                  <div className="food_item_info_cont1">
+                    <div className="food_name">
+                      <p> {data["Product name"]}</p>
+                    </div>
+                    <div className="food_rating">
+                      <p>
+                        {data.product_rating} <i className="fa fa-star"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="food_item_info_cont2">
+                    <div className="food_cousine">
+                      <p>{data.specifications.General["Model Number"]}</p>
+                    </div>
+                    <div className="food_price">
+                      <p>{data.product_price}</p>
+                    </div>
+                  </div>
+                </div>
+                <hr
+                  style={{
+                    backgroundColor: "lightgrey",
+                    border: "1px solid lightgray",
+                  }}
+                />
+                <div className="food_stats">
                   <p>
-                    4.0 <i className="fa fa-star"></i>
+                    <i
+                      className="fa fa-line-chart"
+                      style={{
+                        color: "white",
+                        backgroundColor: "rgb(135, 158, 235)",
+                        borderRadius: "50%",
+                        padding: "6px",
+                        marginRight: "4px",
+                      }}
+                    ></i>
+                    {` ${Math.floor(Math.random()*10000)+20000} orders plced recently`}
                   </p>
                 </div>
               </div>
-              <div className="food_item_info_cont2">
-                <div className="food_cousine">
-                  <p> North indian fast food</p>
-                </div>
-                <div className="food_price">
-                  <p>₹100 for one</p>
-                </div>
-              </div>
-            </div>
-            <hr
-              style={{
-                backgroundColor: "lightgrey",
-                border: "1px solid lightgray",
-              }}
-            />
-            <div className="food_stats">
-              <p>
-                <i
-                  className="fa fa-line-chart"
-                  style={{
-                    color: "white",
-                    backgroundColor: "rgb(135, 158, 235)",
-                    borderRadius: "50%",
-                    padding: "6px",
-                    marginRight: "4px",
-                  }}
-                ></i>
-                23000 orders plced recently
-              </p>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </>

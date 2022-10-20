@@ -2,8 +2,10 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { useEffect, useLayoutEffect, useState } from "react";
 import Code from "../images/apple-offers1.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
+  const navigate = useNavigate();
   const [error, setError] = useState("");
   const [weatherData, setWeather] = useState("");
   const [systemTheme, setsys] = useState(false);
@@ -69,7 +71,7 @@ const Homepage = () => {
     showCoupon();
     getWeather();
   }, []);
-  
+
   useLayoutEffect(() => {
     InitialiseColorscheme();
   }, []);
@@ -86,12 +88,24 @@ const Homepage = () => {
             className="fa fa-remove"
           ></i>
           <p>
-            Websites <span style={{fontWeight:"bold",color:"red"}}>color scheme </span>is based on <span style={{fontWeight:"bold",color:"red"}}>system prefrences</span> but you can
-            change color scheme using{" "}
+            Websites{" "}
+            <span style={{ fontWeight: "bold", color: "red" }}>
+              color scheme{" "}
+            </span>
+            is based on{" "}
+            <span style={{ fontWeight: "bold", color: "red" }}>
+              system prefrences
+            </span>{" "}
+            but you can change color scheme using{" "}
             <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"}></i>{" "}
             button
           </p>
-          <p style={{margin:"0rem",marginBottom:"5px"}}>Includes your current <span style={{fontWeight:"bold",color:"red"}}>Weather and location</span></p>
+          <p style={{ margin: "0rem", marginBottom: "5px" }}>
+            Includes your current{" "}
+            <span style={{ fontWeight: "bold", color: "red" }}>
+              Weather and location
+            </span>
+          </p>
 
           <img src={Code} />
         </div>
@@ -104,28 +118,38 @@ const Homepage = () => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              flexGrow:1,
-              justifyContent: "space-around"
+              flexGrow: 1,
+              justifyContent: "space-around",
             }}
           >
-            <div className="weather" style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      alignItems: "center",
-    flexGrow: 1,
-    justifyContent: "space-around",
-                    }}>
+            <div
+              className="weather"
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                flexGrow: 1,
+                justifyContent: "space-around",
+              }}
+            >
               {weatherData && (
                 <>
                   <span
                     style={{
                       display: "flex",
                       flexDirection: "row",
-                      alignItems:"center"
+                      alignItems: "center",
                     }}
                   >
-                    <span style={{paddingRight:"10px",fontWeight:"500"}}>{`${weatherData.city.name } `}</span>
-                    <span style={{paddingRight:"5px"}} className="fa fa-cloud"> </span>
+                    <span
+                      style={{ paddingRight: "10px", fontWeight: "500" }}
+                    >{`${weatherData.city.name} `}</span>
+                    <span
+                      style={{ paddingRight: "5px" }}
+                      className="fa fa-cloud"
+                    >
+                      {" "}
+                    </span>
                     <span>
                       {weatherData.list[0].temp.day}
                       <sup>°C</sup>
@@ -133,10 +157,7 @@ const Homepage = () => {
                   </span>
                 </>
               )}
-              {error && (
-                <span className="">
-                </span>
-              )}
+              {error && <span className=""></span>}
             </div>
             <p>
               Get 5% instant Cashback up to ₹6000 with qualifying HDFC Bank
@@ -150,7 +171,12 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="mac_air">
+      <section
+        className="mac_air"
+        onClick={() => {
+          navigate("/listing/3");
+        }}
+      >
         <div className="mac_air_cont1">
           <div className="mac_air_title">
             <h1>Macbook Air</h1>
@@ -165,7 +191,10 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="mac_pro_book">
+      <section className="mac_pro_book" 
+       onClick={() => {
+        navigate("/listing/4");
+      }}>
         <div className="mac_pro_cont1">
           <div className="mac_pro_title">
             <h1>Macbook Pro 13"</h1>
@@ -175,11 +204,14 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy {">"}</span>
+            
           </div>
         </div>
       </section>
-      <section className="get_airpods">
+      <section className="get_airpods"
+       onClick={() => {
+        navigate("/listing/2");
+      }}>
         <div className="get_title">
           <h1>
             <i>
@@ -198,7 +230,9 @@ const Homepage = () => {
       </section>
 
       <section className="iphone_watch">
-        <div className="iphone">
+        <div className="iphone"  onClick={() => {
+          navigate("/listing/1");
+        }}>
           <div className="iphone_title">
             <h1>iPhone 13 pro</h1>
           </div>
@@ -207,7 +241,7 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy {">"}</span>
+            
           </div>
         </div>
         <div className="watch">
@@ -217,11 +251,14 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy {">"}</span>
+            
           </div>
         </div>
       </section>
-      <section className="ipad_mac">
+      <section className="ipad_mac" 
+       onClick={() => {
+        navigate("/listing/2");
+      }}>
         <div className="ipad_cont1">
           <div className="ipad_cont2">
             <div className="ipad_title"></div>
@@ -230,20 +267,23 @@ const Homepage = () => {
             </div>
             <div className="buy">
               <span>Learn more {">"} </span>
-              <span>Buy {">"}</span>
+              
             </div>
           </div>
         </div>
-        <div className="studio_cont2">
+        <div className="studio_cont2" 
+         onClick={() => {
+          navigate("/listing/5");
+        }}>
           <div className="studio_title">
-            <h1>Mac Studio</h1>
+            <h1>Airpods</h1>
           </div>
           <div className="empower">
             <p>Empower station</p>
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            <span>Buy {">"}</span>
+            
           </div>
         </div>
       </section>
@@ -256,7 +296,7 @@ const Homepage = () => {
             </div>
             <div className="buy">
               <span>Learn more {">"} </span>
-              <span>Buy {">"}</span>
+              
             </div>
           </div>
         </div>
