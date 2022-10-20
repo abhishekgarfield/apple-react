@@ -1,12 +1,24 @@
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import Navbar from "../components/navbar";
 
 const Listing = () => {
-  const { category_id } = useParams();
+
+  const systheme=useSelector((state)=>{return state.dark.theme})
+  var { category_id } = useParams();
+  console.log(systheme);
   console.log(category_id);
   const [Products, setProducts] = useState(null);
   const loadProducts = () => {
-    fetch(`https://applegarfield.herokuapp.com/?category_id=${category_id}`)
+    var url = "";
+    if (category_id == "all") {
+      url = `https://applegarfield.herokuapp.com/?category_id`;
+    } else {
+      url = `https://applegarfield.herokuapp.com/?category_id=${category_id}`;
+    }
+    console.log(url);
+    fetch(url)
       .then((res) => {
         return res.json();
       })
@@ -37,13 +49,15 @@ const Listing = () => {
     }
     e.currentTarget.className += " active";
   }
-  useEffect(()=>{
+  useEffect(() => {
     loadProducts();
-  },[])
+  }, []);
 
   return (
     <>
+    <Navbar/>
       <div id="filters">
+
         <div id="find_head_cont4">
           <div className="fiter_buttons" onClick={(e) => showfilter(e)}>
             <span>
@@ -138,7 +152,7 @@ const Listing = () => {
             return (
               <div className="food_item_card" key={index}>
                 <div className="food_img">
-                    <img src={data.product_url}/>
+                  <img src={data.product_url} />
                 </div>
                 <div className="food_item_info">
                   <div className="food_item_info_cont1">
@@ -178,7 +192,9 @@ const Listing = () => {
                         marginRight: "4px",
                       }}
                     ></i>
-                    {` ${Math.floor(Math.random()*10000)+20000} orders plced recently`}
+                    {` ${
+                      Math.floor(Math.random() * 10000) + 20000
+                    } orders plced recently`}
                   </p>
                 </div>
               </div>

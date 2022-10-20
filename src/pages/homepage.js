@@ -3,20 +3,26 @@ import Footer from "../components/footer";
 import { useEffect, useLayoutEffect, useState } from "react";
 import Code from "../images/apple-offers1.jpeg";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setInitialtheme } from "../Reducers/darkreducer";
 
 const Homepage = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
+  const systheme = useSelector((state) => {
+    return state.dark.theme;
+  });
   const [error, setError] = useState("");
   const [weatherData, setWeather] = useState("");
-  const [systemTheme, setsys] = useState(false);
-
+  console.log(systheme);
   // Initialize color scheme
 
   const InitialiseColorscheme = () => {
     const systemTheme = window.matchMedia(
       "(prefers-color-scheme:dark)"
     ).matches;
-    setsys(systemTheme);
+    console.log("first");
+    dispatch(setInitialtheme(systemTheme));
     if (systemTheme === true) {
       document.body.classList.toggle("night");
     }
@@ -24,17 +30,16 @@ const Homepage = () => {
 
   //Change color scheme (theme)
 
-  const changeTheme = () => {
-    var el = document.getElementById("dark");
-    el.addEventListener("click", () => {
-      document.body.classList.toggle("night");
-      if (el.className === "fa fa-moon-o") {
-        el.className = "fa fa-sun-o";
-      } else {
-        el.className = "fa fa-moon-o";
-      }
-    });
-  };
+  var el = document?.getElementById("dark");
+  el?.addEventListener("click", () => {
+    dispatch(setInitialtheme(!systheme));
+
+    if (el.className === "fa fa-moon-o") {
+      el.className = "fa fa-sun-o";
+    } else {
+      el.className = "fa fa-moon-o";
+    }
+  });
   // Show coupon
 
   const showCoupon = () => {
@@ -67,13 +72,14 @@ const Homepage = () => {
   };
 
   useEffect(() => {
-    changeTheme();
     showCoupon();
     getWeather();
   }, []);
 
   useLayoutEffect(() => {
-    InitialiseColorscheme();
+    if (systheme == null) {
+      InitialiseColorscheme();
+    }
   }, []);
   return (
     <>
@@ -97,8 +103,7 @@ const Homepage = () => {
               system prefrences
             </span>{" "}
             but you can change color scheme using{" "}
-            <i className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"}></i>{" "}
-            button
+            <i className={systheme ? "fa fa-sun-o" : "fa fa-moon-o"}></i> button
           </p>
           <p style={{ margin: "0rem", marginBottom: "5px" }}>
             Includes your current{" "}
@@ -164,7 +169,7 @@ const Homepage = () => {
               credit cards on orders over ₹54900
             </p>
             <i
-              className={systemTheme ? "fa fa-sun-o" : "fa fa-moon-o"}
+              className={systheme ? "fa fa-sun-o" : "fa fa-moon-o"}
               id="dark"
             ></i>
           </span>
@@ -174,7 +179,7 @@ const Homepage = () => {
       <section
         className="mac_air"
         onClick={() => {
-          navigate("/listing/3");
+          navigate(`/listing/3`);
         }}
       >
         <div className="mac_air_cont1">
@@ -191,10 +196,12 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="mac_pro_book" 
-       onClick={() => {
-        navigate("/listing/4");
-      }}>
+      <section
+        className="mac_pro_book"
+        onClick={() => {
+          navigate(`/listing/4`);
+        }}
+      >
         <div className="mac_pro_cont1">
           <div className="mac_pro_title">
             <h1>Macbook Pro 13"</h1>
@@ -204,14 +211,15 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            
           </div>
         </div>
       </section>
-      <section className="get_airpods"
-       onClick={() => {
-        navigate("/listing/2");
-      }}>
+      <section
+        className="get_airpods"
+        onClick={() => {
+          navigate(`/listing/2`);
+        }}
+      >
         <div className="get_title">
           <h1>
             <i>
@@ -230,9 +238,12 @@ const Homepage = () => {
       </section>
 
       <section className="iphone_watch">
-        <div className="iphone"  onClick={() => {
-          navigate("/listing/1");
-        }}>
+        <div
+          className="iphone"
+          onClick={() => {
+            navigate(`/listing/1`);
+          }}
+        >
           <div className="iphone_title">
             <h1>iPhone 13 pro</h1>
           </div>
@@ -241,7 +252,6 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            
           </div>
         </div>
         <div className="watch">
@@ -251,14 +261,15 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            
           </div>
         </div>
       </section>
-      <section className="ipad_mac" 
-       onClick={() => {
-        navigate("/listing/2");
-      }}>
+      <section
+        className="ipad_mac"
+        onClick={() => {
+          navigate(`/listing/2`);
+        }}
+      >
         <div className="ipad_cont1">
           <div className="ipad_cont2">
             <div className="ipad_title"></div>
@@ -267,14 +278,15 @@ const Homepage = () => {
             </div>
             <div className="buy">
               <span>Learn more {">"} </span>
-              
             </div>
           </div>
         </div>
-        <div className="studio_cont2" 
-         onClick={() => {
-          navigate("/listing/5");
-        }}>
+        <div
+          className="studio_cont2"
+          onClick={() => {
+            navigate(`/listing/5`);
+          }}
+        >
           <div className="studio_title">
             <h1>Airpods</h1>
           </div>
@@ -283,7 +295,6 @@ const Homepage = () => {
           </div>
           <div className="buy">
             <span>Learn more {">"} </span>
-            
           </div>
         </div>
       </section>
@@ -296,7 +307,6 @@ const Homepage = () => {
             </div>
             <div className="buy">
               <span>Learn more {">"} </span>
-              
             </div>
           </div>
         </div>

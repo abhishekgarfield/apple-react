@@ -1,4 +1,10 @@
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const dispatch=useDispatch();
+  const systheme=useSelector((state)=>{return state.dark.theme})
+  const navigate=useNavigate();
     const handleClick=(e)=>
     {
         var el=document.getElementsByClassName("nav-cont");
@@ -30,22 +36,38 @@ const Navbar = () => {
             </span>
           </li>
           <li>
-            <span className="store" >
-              <span className="hde">Store</span>
+            <span className="store" onClick={() => {
+              
+          navigate(`/listing/all`);
+          window.location.reload();
+          console.log(systheme);
+          
+          
+        }} >
+              <span className="hde" >Store</span>
             </span>
           </li>
           <li>
-            <span className="mac" >
+            <span className="mac" onClick={() => {
+          navigate(`/listing/3`);
+          window.location.reload();
+        }}>
               <span className="hde">Mac</span>
             </span>
           </li>
           <li>
-            <span className="iPad" >
+            <span className="iPad" onClick={() => {
+          navigate(`/listing/2`);
+          window.location.reload();
+        }}>
               <span className="hde">iPad</span>
             </span>
           </li>
           <li>
-            <span className="iPhone" >
+            <span className="iPhone" onClick={() => {
+          navigate(`/listing/1`);
+          window.location.reload();
+        }}>
               <span className="hde">iPhone</span>
             </span>
           </li>
@@ -55,7 +77,10 @@ const Navbar = () => {
             </span>
           </li>
           <li>
-            <span className="airpods" >
+            <span className="airpods" onClick={() => {
+          navigate(`/listing/5`);
+          window.location.reload();
+        }} >
               <span className="hde">Airpods</span>
             </span>
           </li>
@@ -70,7 +95,10 @@ const Navbar = () => {
             </span>
           </li>
           <li>
-            <span className="accessories" >
+            <span className="accessories" onClick={() => {
+          navigate(`/listing/5`);
+          window.location.reload();
+        }} >
               <span className="hde">Accesories</span>
             </span>
           </li>
