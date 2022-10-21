@@ -40,7 +40,6 @@ const Navbar = () => {
               
           navigate(`/listing/all`);
           window.location.reload();
-          console.log(systheme);
           
           
         }} >

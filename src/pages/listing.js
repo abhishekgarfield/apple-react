@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import Navbar from "../components/navbar";
+import { setdata } from "../Reducers/Productreducer";
 
 const Listing = () => {
-
+    const navigate=useNavigate();
+const dispatch=useDispatch();
   const systheme=useSelector((state)=>{return state.dark.theme})
   var { category_id } = useParams();
   console.log(systheme);
-  console.log(category_id);
-  const [Products, setProducts] = useState(null);
+  const Products=useSelector((state)=>{return state.products.products})
+console.log(Products); 
   const loadProducts = () => {
     var url = "";
     if (category_id == "all") {
@@ -24,7 +26,8 @@ const Listing = () => {
       })
       .then((data) => {
         console.log(data);
-        setProducts(data);
+        dispatch(setdata(data));
+        
       });
   };
   function showfilter(e) {
@@ -150,7 +153,9 @@ const Listing = () => {
         <div className="food_loading_area_2">
           {Products?.map((data, index) => {
             return (
-              <div className="food_item_card" key={index}>
+              <div className="food_item_card" key={index} onClick={()=>{
+                navigate(`/product/${data.Product_id}`)
+              }}>
                 <div className="food_img">
                   <img src={data.product_url} />
                 </div>
