@@ -9,7 +9,7 @@ const Productinfo = () => {
     console.log(url);
     fetch(url)
       .then((res) => {
-        return res.json();
+        return res.json();//hi
       })
       .then((data) => {
         console.log(data);
