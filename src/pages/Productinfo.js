@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
-  Apps,
-  HelpOutline,
-  Search,
-  Settings,
-  Tune,
   Star,
   ShoppingCart,
   FlashOn,
@@ -71,7 +66,7 @@ const Productinfo = () => {
           </div>
           <div className="Product-price">
             {`₹${product?.product_price}`}
-            <del>{`₹${product.product_price+2000}`}</del>
+            <del>{`₹${product?.product_price+2000}`}</del>
           </div>
           <div className="Product-spexifications">
             <div className="title-for-specs">

@@ -266,11 +266,11 @@ const Homepage = () => {
       </section>
       <section
         className="ipad_mac"
-        onClick={() => {
-          navigate(`/listing/2`);
-        }}
+       
       >
-        <div className="ipad_cont1">
+        <div className="ipad_cont1"  onClick={() => {
+          navigate(`/listing/2`);
+        }}>
           <div className="ipad_cont2">
             <div className="ipad_title"></div>
             <div className="light">
@@ -282,10 +282,10 @@ const Homepage = () => {
           </div>
         </div>
         <div
-          className="studio_cont2"
-          onClick={() => {
+          className="studio_cont2" onClick={() => {
             navigate(`/listing/5`);
           }}
+         
         >
           <div className="studio_title">
             <h1>Airpods</h1>

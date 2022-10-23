@@ -9,9 +9,7 @@ const Listing = () => {
 const dispatch=useDispatch();
   const systheme=useSelector((state)=>{return state.dark.theme})
   var { category_id } = useParams();
-  console.log(systheme);
-  const Products=useSelector((state)=>{return state.products.products})
-console.log(Products); 
+const [Products,setproducts]=useState(null);
   const loadProducts = () => {
     var url = "";
     if (category_id == "all") {
@@ -26,8 +24,7 @@ console.log(Products);
       })
       .then((data) => {
         console.log(data);
-        dispatch(setdata(data));
-        
+        setproducts(data);
       });
   };
   function showfilter(e) {
@@ -175,7 +172,7 @@ console.log(Products);
                       <p>{data.specifications.General["Model Number"]}</p>
                     </div>
                     <div className="food_price">
-                      <p>{data.product_price}</p>
+                      <p>{`₹${data.product_price}`}</p>
                     </div>
                   </div>
                 </div>

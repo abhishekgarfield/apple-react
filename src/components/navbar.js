@@ -26,7 +26,13 @@ const Navbar = () => {
             </span>
           </li>
           <li>
-            <span className="logo" >
+            <span className="logo" onClick={() => {
+              
+              navigate(`/`);
+              window.location.reload();
+              
+              
+            }} >
               <span className="hde">logo</span>
             </span>
           </li>
