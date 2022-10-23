@@ -1,72 +1,77 @@
-body,html
-{
+body,
+html {
     padding: 0rem;
     margin: 0rem;
     color: white;
     width: 100%;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
-.night{
-    background-color:black;
-    color:white
+
+.night {
+    background-color: black;
+    color: white
 }
-.buy
-{
+
+.buy {
     margin: auto;
     width: fit-content;
     padding: 2rem 0rem;
 
 }
-.cashback_cont i{
+
+.cashback_cont i {
     font-size: 30px;
     border: 2px solid rgba(40, 124, 241, 0.848);
     padding: 8px;
-    
+
     display: flex;
     justify-content: center;
     text-align: center;
     border-radius: 50%;
     background-color: skyblue;
-    
+
 }
-.fa{
-    font-size: 40px; 
+
+.fa {
+    font-size: 40px;
 }
- .fa-sun-o
-{
+
+.fa-sun-o {
     font-size: 40px;
     color: white;
 
 }
-.cashback_cont .fa-moon-o
-{
-    color:"black";
+
+.cashback_cont .fa-moon-o {
+    color: "black";
 }
-.fa-moon-o:hover{
+
+.fa-moon-o:hover {
     color: grey;
 }
-.fa-sun-o:hover{
+
+.fa-sun-o:hover {
     color: yellow;
     border-color: yellow;
 }
-.cashback_cont i:hover{
-    border:2px solid grey;
+
+.cashback_cont i:hover {
+    border: 2px solid grey;
     background-color: black;
 }
 
-.buy span
-{
+.buy span {
     text-decoration: none;
     padding: 0rem 1rem;
     font-weight: 400;
     font-size: 1.7rem;
-    color: #2997ff; 
+    color: #2997ff;
 }
 
 
 /* ------------  navbar ---------------*/
 
-.nav-cont{
+.nav-cont {
     display: flex;
     position: fixed;
     width: 100%;
@@ -74,13 +79,15 @@ body,html
     justify-content: space-evenly;
     background-color: rgba(19, 17, 17, 0.955);
     z-index: 3;
-    
-   
+
+
 }
-.night .nav-cont{
-   background:rgb(53, 51, 51); 
+
+.night .nav-cont {
+    background: rgb(53, 51, 51);
 }
-.nav-cont ul{
+
+.nav-cont ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -89,135 +96,138 @@ body,html
     margin: 0rem auto;
     list-style-type: none;
 }
-.nav-cont ul li{
+
+.nav-cont ul li {
     padding: 10px;
 }
 
-#Phone-nav-bar{
+#Phone-nav-bar {
     display: none;
     color: white;
 }
 
-.logo
-{
+.logo {
     background-image: url("./images/nav_bar/globalnav_apple_image__b5er5ngrzxqq_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
-   
+
 }
-.store
-{
-    background-image: url("./images/nav_bar/globalnav_links_store_image__c7jy08initqq_large.svg"); 
+
+.store {
+    background-image: url("./images/nav_bar/globalnav_links_store_image__c7jy08initqq_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.mac
-{
+
+.mac {
     background-image: url("./images/nav_bar/globalnav_links_mac_image__dazlko3t9a6a_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
-    
-    
+
+
 }
-.iPad
-{
+
+.iPad {
     background-image: url("./images/nav_bar/globalnav_links_ipad_image__fw9qyj9lloi2_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.iPhone
-{
+
+.iPhone {
     background-image: url("./images/nav_bar/globalnav_links_iphone_image__ko7x4isga4ia_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.iwatch
-{
+
+.iwatch {
     background-image: url("./images/nav_bar/globalnav_links_watch_image__gkoblojrlsqe_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.airpods
-{
+
+.airpods {
     background-image: url("./images/nav_bar/globalnav_links_airpods_image__f969s84ivmaa_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.tv
-{
+
+.tv {
     background-image: url("./images/nav_bar/globalnav_links_tvhome_image__zb2ewyxbi6ae_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 
 }
-.only
-{
+
+.only {
     background-image: url("./images/nav_bar/globalnav_links_onlyonapple_image__c4t8k97tougm_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.accessories
-{
+
+.accessories {
     background-image: url("./images/nav_bar/globalnav_links_accessories_image__edj0wqmfwxyu_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
-    
+
 }
-.support
-{
+
+.support {
     background-image: url("./images/nav_bar/globalnav_links_support_image__bw9kctll7u3m_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.search
-{
+
+.search {
     background-image: url("./images/nav_bar/globalnav_search_image__cbllq1gkias2_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.bag1,.bag2
-{
+
+.bag1,
+.bag2 {
     background-image: url("./images/nav_bar/globalnav_bag_image__yzte50i47ciu_large.svg");
     background-position: center center;
     background-repeat: no-repeat;
     width: fit-content;
 }
-.nav-cont ul li:nth-child(3){
+
+.nav-cont ul li:nth-child(3) {
     display: none;
 }
+
 /* ------------  cashback section ------------ */
 
-.cashback
-{
+.cashback {
     width: 100%;
     background-color: rgba(255, 250, 240, 0.841);
     color: black;
     padding: 3rem 0rem 1rem 0rem;
 }
-.night .cashback{
- background-color: rgba(66, 63, 63, 0.594);
- color:white;
+
+.night .cashback {
+    background-color: rgba(66, 63, 63, 0.594);
+    color: white;
 
 }
-.cashback_cont
-{
+
+.cashback_cont {
     max-width: 940px;
     margin: auto;
 }
-.cashback_cont p
-{
+
+.cashback_cont p {
     margin: 0rem;
     text-align: center;
     font-weight: 300;
@@ -232,75 +242,86 @@ body,html
 
 /* ------------- couponn pop up --------------*/
 
-.night .coupon{
-    background: linear-gradient(rgba(255, 255, 255, 0.279),rgba(0, 0, 0, 0.645))
+.night .coupon {
+    background: linear-gradient(rgba(255, 255, 255, 0.279), rgba(0, 0, 0, 0.645))
 }
-.night .coupon-frame{
+
+.night .coupon-frame {
     background-color: black;
 }
-.coupon{
+
+.coupon {
     position: fixed;
     display: flex;
     justify-content: center;
-    top:-100vw;
+    top: -100vw;
     height: 100vh;
-    width:100vw;
+    width: 100vw;
     background: rgba(0, 0, 0, 0.645);
     z-index: 40;
-    transition:0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
     overflow: scroll;
 
 }
-.coupon-frame
-{  display: flex;
-    background-color:aqua;
+
+.coupon-frame {
+    display: flex;
+    background-color: aqua;
     flex-direction: column;
     margin: 10vh auto;
     padding: 1vh 1vw;
     flex: 0 0 60%;
     position: relative;
-    
+
 }
-.coupon-frame .fa-sun-o{
+
+.coupon-frame .fa-sun-o {
     color: yellow;
 }
-.coupon-frame .fa-moon-o{
+
+.coupon-frame .fa-moon-o {
     color: grey;
 }
-.coupon-frame img{
+
+.coupon-frame img {
     width: 100%;
-    height:85%;
+    height: 85%;
 }
-.coupon-frame p{
+
+.coupon-frame p {
     font-weight: 600;
     color: black;
 }
-.night .coupon-frame p{
-    font-weight:600;
+
+.night .coupon-frame p {
+    font-weight: 600;
     color: white;
 }
-#cls{
+
+#cls {
     position: absolute;
     right: -13px;
-    top:-16px;
+    top: -16px;
     background-color: rgb(213, 5, 5);
     padding: 10px;
     border-radius: 50%;
-    
+
 }
-#cls:hover{
-    background-color:red;
+
+#cls:hover {
+    background-color: red;
 }
-.fa-remove:hover{
+
+.fa-remove:hover {
     color: white;
 }
-.fa-remove{
+
+.fa-remove {
     color: black;
 }
 
 /* ------------  macbook pro section ------------ */
-.mac_pro_book
-{
+.mac_pro_book {
     width: 100%;
     background-image: url("./images/hero_mbp13__f88jcbca0ve6_largetall.jpg");
     background-position: center;
@@ -309,26 +330,27 @@ body,html
     background-size: cover;
     height: 43rem;
 }
-.night .mac_pro_book{
+
+.night .mac_pro_book {
     width: 100%;
-    background:linear-gradient(rgba(194, 185, 203, 0.374),rgba(77, 58, 76, 0.14)),url("./images/hero_mbp13__f88jcbca0ve6_largetall.jpg");
+    background: linear-gradient(rgba(194, 185, 203, 0.374), rgba(77, 58, 76, 0.14)), url("./images/hero_mbp13__f88jcbca0ve6_largetall.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
     background-size: cover;
     height: 43rem;
 }
-.mac_pro_title h1
-{
-    font-size:4rem;
+
+.mac_pro_title h1 {
+    font-size: 4rem;
     font-weight: 500;
     padding-top: 3rem;
     width: fit-content;
     margin: auto;
 
 }
-.mac_pro_charge
-{
+
+.mac_pro_charge {
     width: fit-content;
     background-image: url("./images/logo_hero_mbp13__gdqp6kikbxe2_largetall.png");
     background-position: center;
@@ -338,8 +360,9 @@ body,html
     margin: auto;
     background-size: 26rem;
 }
-.night .mac_pro_charge{
-    background:url("./images/logo_hero_macbookair__edl9uovq56wm_largetall.png");
+
+.night .mac_pro_charge {
+    background: url("./images/logo_hero_macbookair__edl9uovq56wm_largetall.png");
     background-position: center;
     background-repeat: no-repeat;
     height: 5rem;
@@ -351,8 +374,7 @@ body,html
 
 /* ------------   macbook air section ------------ */
 
-.mac_air
-{
+.mac_air {
     width: 100%;
     background-color: white;
     height: 45rem;
@@ -362,36 +384,37 @@ body,html
     background-position: center;
     background-repeat: no-repeat;
 }
-.night .mac_air{
+
+.night .mac_air {
     width: 100%;
     height: 45rem;
     color: black;
     background-size: cover;
-    background:linear-gradient(rgba(64, 62, 62, 0.371),rgba(45, 44, 44, 0.45)),url("./images/hero_macbookair__el7scava26mq_largetall.png");
+    background: linear-gradient(rgba(64, 62, 62, 0.371), rgba(45, 44, 44, 0.45)), url("./images/hero_macbookair__el7scava26mq_largetall.png");
     background-position: center;
     background-repeat: no-repeat;
 }
-.mac_air_cont1
-{
+
+.mac_air_cont1 {
     width: 50%;
     padding: 5% 0% 0% 0%;
 
 }
-.mac_air_title
-{
+
+.mac_air_title {
     width: fit-content;
     margin: 0rem auto;
 }
-.mac_air_title h1
-{
-    font-size:4rem;
+
+.mac_air_title h1 {
+    font-size: 4rem;
     font-weight: 500;
     padding-top: 7rem;
     width: fit-content;
     margin: auto;
 }
-.mac_air_charge
-{
+
+.mac_air_charge {
     background-image: url("./images/logo_hero_macbookair__edl9uovq56wm_largetall.png");
     width: 18rem;
     height: 4rem;
@@ -399,26 +422,26 @@ body,html
     background-repeat: no-repeat;
     background-position: center;
 }
-.mac_available
-{
+
+.mac_available {
     color: silver;
     font-size: 2rem;
     font-weight: 100;
     margin: 0rem auto;
     width: fit-content;
 }
-.night .mac_available{
-    color:white
+
+.night .mac_available {
+    color: white
 }
-.mac_available p
-{
+
+.mac_available p {
     margin: 0.5rem auto;
 }
 
 /* ------------   get airpods ------------ */
 
-.get_airpods
-{
+.get_airpods {
     width: 100%;
     height: 50rem;
     background-image: url("./images/hero_bts__bcuslanw39xe_largetall.jpg");
@@ -430,45 +453,46 @@ body,html
     overflow: hidden;
 }
 
-.night .get_airpods{
-    background:linear-gradient(rgba(183, 108, 108, 0.371),rgba(23, 23, 23, 0.45)),url("./images/hero_bts__bcuslanw39xe_largetall.jpg");
+.night .get_airpods {
+    background: linear-gradient(rgba(183, 108, 108, 0.371), rgba(23, 23, 23, 0.45)), url("./images/hero_bts__bcuslanw39xe_largetall.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.get_title ,.get_save , .get_shop
-{
+
+.get_title,
+.get_save,
+.get_shop {
     width: fit-content;
     margin: 0rem auto;
     padding: 1rem 0rem 0rem 0rem;
     position: relative;
 }
-.get_title h1
-{
-    font-size:4rem;
+
+.get_title h1 {
+    font-size: 4rem;
     font-weight: 600;
     padding-top: 3rem;
     width: fit-content;
-    margin: 0rem auto; 
+    margin: 0rem auto;
 }
-.get_save p
-{
+
+.get_save p {
     width: fit-content;
     margin: 0rem auto;
     font-size: 1.7rem;
-    
+
 }
 
 /* ------------  iphone_watch ------------ */
 
-.iphone_watch
-{
+.iphone_watch {
     width: 100%;
     background-color: white;
     color: black;
 }
-.iphone
-{
+
+.iphone {
     width: 50%;
     background-image: url("./images/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
     background-position: center;
@@ -477,8 +501,9 @@ body,html
     height: 35rem;
     float: left;
 }
-.night .iphone{
-    background:linear-gradient(rgba(151, 181, 151, 0.371),rgba(45, 44, 44, 0.893)), url("./images/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
+
+.night .iphone {
+    background: linear-gradient(rgba(151, 181, 151, 0.371), rgba(45, 44, 44, 0.893)), url("./images/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -486,37 +511,37 @@ body,html
     float: left;
 
 }
-.iphone_title h1
-{
-    font-size:3rem;
+
+.iphone_title h1 {
+    font-size: 3rem;
     font-weight: 500;
     width: fit-content;
-    margin: 2rem auto 0.2rem auto; 
+    margin: 2rem auto 0.2rem auto;
     letter-spacing: -2px;
 }
-.pro
-{
+
+.pro {
     width: fit-content;
     margin: 0rem auto;
     padding: 0.3rem 0rem 0rem 0rem;
 }
-.pro p
-{
+
+.pro p {
     margin: 0rem;
     font-size: 1.5rem;
     font-weight: 300;
 }
-.iphone .buy 
-{
+
+.iphone .buy {
     padding: 0.5rem 0rem;
-    
+
 }
-.iphone .buy span
-{
-font-size: 1.3rem;
+
+.iphone .buy span {
+    font-size: 1.3rem;
 }
-.watch
-{
+
+.watch {
     width: 50%;
     background-image: url("./images/promo_watch_lte__djeaso7ukrsm_large.jpg");
     background-position: center;
@@ -525,16 +550,17 @@ font-size: 1.3rem;
     height: 35rem;
     float: left;
 }
-.night .watch{
-    background:linear-gradient(rgba(95, 119, 144, 0.371),rgba(23, 23, 23, 0.45)), url("./images/promo_watch_lte__djeaso7ukrsm_large.jpg");
+
+.night .watch {
+    background: linear-gradient(rgba(95, 119, 144, 0.371), rgba(23, 23, 23, 0.45)), url("./images/promo_watch_lte__djeaso7ukrsm_large.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 35rem;
     float: left;
 }
-.watch_title
-{
+
+.watch_title {
     background-image: url("./images/promo_logo_watch_lte__emrof7zzkriq_large.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -543,38 +569,37 @@ font-size: 1.3rem;
     background-size: 11rem;
     margin: 2rem auto 0rem auto;
 }
-.display
-{
+
+.display {
     width: fit-content;
     margin: auto;
 }
-.display p
-{
+
+.display p {
     margin: 0rem;
     font-size: 1.5rem;
     font-weight: 400;
 }
-.watch .buy
-{
+
+.watch .buy {
     padding: 0.5rem 0rem;
 }
-.watch .buy span
-{
-    font-size: 1.3rem; 
+
+.watch .buy span {
+    font-size: 1.3rem;
 }
 
 /* ------------   air and studio section  ------------ */
 
-.ipad_mac
-{
+.ipad_mac {
     width: 100%;
     height: 41.5rem;
     clear: both;
 
-    
+
 }
-.ipad_cont1
-{
+
+.ipad_cont1 {
     width: 47.5%;
     float: left;
     height: 40rem;
@@ -586,17 +611,17 @@ font-size: 1.3rem;
     color: white;
 
 }
-.light
-{
+
+.light {
     margin: auto;
     width: fit-content;
 }
-.light p
-{
+
+.light p {
     margin: 0.5rem auto;
 }
-.ipad_title
-{
+
+.ipad_title {
     background-image: url("./images/promo_logo_ipadair__frwnnsqveeye_large.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -604,13 +629,13 @@ font-size: 1.3rem;
     width: 11rem;
     height: 3rem;
     margin: 4rem auto 0rem auto;
-} 
-.studio_cont2
-{
+}
+
+.studio_cont2 {
     width: 47.5%;
     float: left;
     background-image: url("https://i.imgur.com/wLRyum7.png");
-    background-position:bottom;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: 55%;
     height: 40rem;
@@ -618,53 +643,52 @@ font-size: 1.3rem;
     color: black;
 
 }
-.ipad_mac .buy
-{
+
+.ipad_mac .buy {
     padding: 0.5rem 0rem;
 }
-.ipad_mac .buy span
-{
-    font-size: 1.3rem; 
+
+.ipad_mac .buy span {
+    font-size: 1.3rem;
 }
-.studio_title
-{
+
+.studio_title {
     width: fit-content;
     margin: 4rem auto 0rem auto;
 
 }
-.empower
-{
+
+.empower {
     width: fit-content;
-    margin:auto
+    margin: auto
 }
-.empower p
-{
-    margin: 0.5rem auto; 
+
+.empower p {
+    margin: 0.5rem auto;
 }
-.studio_title h1
-{
+
+.studio_title h1 {
 
 
-    font-size:3rem;
+    font-size: 3rem;
     font-weight: 500;
     width: fit-content;
-    margin: 2rem auto 0.2rem auto; 
+    margin: 2rem auto 0.2rem auto;
     letter-spacing: -2px;
 
 }
 
 /* ------------   arcade and tv section  ------------ */
 
-.arc_tv
-{
+.arc_tv {
     width: 100%;
     height: 41rem;
     clear: both;
 
-    
+
 }
-.arc_cont1
-{
+
+.arc_cont1 {
     width: 47.5%;
     float: left;
     height: 40rem;
@@ -676,18 +700,18 @@ font-size: 1.3rem;
     color: white;
 
 }
-.cook
-{
+
+.cook {
     margin: auto;
     width: fit-content;
 }
-.cook p
-{
+
+.cook p {
     margin: 0.5rem auto;
     color: black;
 }
-.arc_title
-{
+
+.arc_title {
     background-image: url("./images/logo__dcojfwkzna2q_large.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -695,9 +719,9 @@ font-size: 1.3rem;
     width: 11rem;
     height: 3rem;
     margin: 4rem auto 0rem auto;
-} 
-.tv_cont2
-{
+}
+
+.tv_cont2 {
     width: 47.5%;
     float: left;
     background-image: url("./images/promo_physical__fyh9juzk5umy_large.jpg");
@@ -706,35 +730,35 @@ font-size: 1.3rem;
     background-size: cover;
     height: 40rem;
     margin: 0.5rem 0.5rem 0.5rem 1rem;
-    color:white;
+    color: white;
 
 }
-.arc_tv .buy
-{
+
+.arc_tv .buy {
     padding: 0.5rem 0rem;
 }
-.arc_tv .buy span
-{
-    font-size: 1.3rem; 
+
+.arc_tv .buy span {
+    font-size: 1.3rem;
 }
-.tv_title
-{
+
+.tv_title {
     width: 32rem;
     height: 3rem;
     background-image: url("./images/logo_light__cfvl40z2nzau_large.png");
     margin: 4rem auto 0rem auto;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:6rem;
+    background-size: 6rem;
 
 }
-.rose
-{
+
+.rose {
     width: 23rem;
     background-size: 22rem;
     height: 8rem;
     background-image: url("./images/promo_physical_tagline__f8s8ke316uuu_large.png");
-    margin:20rem auto 0rem auto;
+    margin: 20rem auto 0rem auto;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -742,115 +766,135 @@ font-size: 1.3rem;
 
 /* ------------   footer  ------------ */
 
-.night footer{
+.night footer {
     background-color: black;
     color: white;
 }
-footer
-{
+
+footer {
     width: 100%;
     color: black;
-    background-color:#f5f5f7;
+    background-color: #f5f5f7;
     overflow: hidden;
-    color:rgb(110, 110, 115);
+    color: rgb(110, 110, 115);
     clear: both;
 }
 
 
-.foot_cont1
-{
+.foot_cont1 {
     margin: 0rem auto;
-    max-width: 1047px; 
+    max-width: 1047px;
     font-size: 0.8rem;
 }
-.foot_cont2
-{
-   margin: 1rem auto;
+
+.foot_cont2 {
+    margin: 1rem auto;
 }
-.foot_cont2 p
-{
-    margin: 0rem auto; 
+
+.foot_cont2 p {
+    margin: 0rem auto;
 }
-.foot_cont3
-{
+
+.foot_cont3 {
     width: 100%;
     overflow: hidden;
 }
-.foot_list1 , .foot_list2 , .foot_list3 , .foot_list4 , .foot_list5
-{
+
+.foot_list1,
+.foot_list2,
+.foot_list3,
+.foot_list4,
+.foot_list5 {
     width: 20%;
     float: left;
 }
-.foot_list1 ul , .foot_list2 ul , .foot_list3  ul , .foot_list4 ul  , .foot_list5 ul 
-{
-list-style-type:none;
-font-size: 1rem;
-font-weight: 200;
-padding-left: 0rem;
-color: black;
 
-
-}
-.night .foot_list1 ul , .night .foot_list2 ul , .night .foot_list3  ul , .night .foot_list4 ul  , .night .foot_list5 ul 
-{
-list-style-type:none;
-font-size: 1rem;
-font-weight: 200;
-padding-left: 0rem;
-color: white;
+.foot_list1 ul,
+.foot_list2 ul,
+.foot_list3 ul,
+.foot_list4 ul,
+.foot_list5 ul {
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 0rem;
+    color: black;
 
 
 }
 
-.foot_list1 ul li , .foot_list2 ul li  , .foot_list3  ul li  , .foot_list4 ul li  , .foot_list5 ul li 
-{
+.night .foot_list1 ul,
+.night .foot_list2 ul,
+.night .foot_list3 ul,
+.night .foot_list4 ul,
+.night .foot_list5 ul {
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 0rem;
+    color: white;
+
+
+}
+
+.foot_list1 ul li,
+.foot_list2 ul li,
+.foot_list3 ul li,
+.foot_list4 ul li,
+.foot_list5 ul li {
     width: 100%;
     padding: 0.3rem 0rem;
 }
-.hde
-{
-    visibility:hidden;
+
+.hde {
+    visibility: hidden;
     color: red;
 }
-.dis
-{
+
+.dis {
     display: none;
 }
 
 /* -----------  weather ----------*/
 
-.fa-cloud{
+.fa-cloud {
     color: aqua;
 }
 
 /* ------------   phone and tab ------------ */
 
-@media screen and  (max-width: 1050px) 
-{
-    .iphone , .watch , .ipad_cont1 , .studio_cont2,.arc_cont1,.tv_cont2, footer
-    {
+@media screen and (max-width: 1050px) {
+
+    .iphone,
+    .watch,
+    .ipad_cont1,
+    .studio_cont2,
+    .arc_cont1,
+    .tv_cont2,
+    footer {
         width: 98%;
         margin: 1%;
     }
+
     .nav-cont ul {
         display: flex;
         margin: 0rem;
         justify-content: flex-start;
     }
 
-    #Phone-nav-bar{
-        display: block;
-    }
-    .nav-cont ul li:nth-child(3)
-    {
+    #Phone-nav-bar {
         display: block;
     }
 
-    .nav-cont ul li:not(:nth-child(-n+3))
-    {
+    .nav-cont ul li:nth-child(3) {
+        display: block;
+    }
+
+    .nav-cont ul li:not(:nth-child(-n+3)) {
         display: none;
     }
-    .nav-cont.responsive{
+
+    .nav-cont.responsive {
         background-color: rgb(18, 17, 17);
         position: fixed;
         z-index: 12;
@@ -859,141 +903,156 @@ color: white;
         width: 100vw;
         height: 100vh;
     }
+
     .nav-cont.responsive ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-    .nav-cont.responsive ul li:not(:nth-child(-n+3)){
+
+    .nav-cont.responsive ul li:not(:nth-child(-n+3)) {
         display: block;
         flex: 0 0 85%;
         margin: auto;
-        padding:1rem 0rem;
+        padding: 1rem 0rem;
         border-bottom: 1px solid white;
     }
-    .nav-cont ul li:nth-child(-n+3){
+
+    .nav-cont ul li:nth-child(-n+3) {
         flex: 1 0 26%;
-       text-align: center;
+        text-align: center;
     }
-    .nav-cont ul li:nth-child(3){
+
+    .nav-cont ul li:nth-child(3) {
         text-align: right;
     }
-    .nav-cont ul li:nth-child(1){
+
+    .nav-cont ul li:nth-child(1) {
         text-align: left;
     }
-    .nav-cont.responsive ul li:nth-last-child(-n+2)
-    {
+
+    .nav-cont.responsive ul li:nth-last-child(-n+2) {
         display: none;
     }
-    .nav-cont.responsive ul li:not(:nth-child(-n+3)):hover{
-       background-color: rgba(211, 211, 211, 0.081);
+
+    .nav-cont.responsive ul li:not(:nth-child(-n+3)):hover {
+        background-color: rgba(211, 211, 211, 0.081);
     }
-    
-    .get_title h1
-    {
+
+    .get_title h1 {
         width: fit-content;
         font-size: 2rem;
     }
-    .night .get_title h1
-    {
+
+    .night .get_title h1 {
         width: fit-content;
         font-size: 2rem;
     }
-    .get_airpods .get_save p
-    {
+
+    .get_airpods .get_save p {
         font-size: 1rem;
     }
-    .buy span
-    {
+
+    .buy span {
         font-size: 1.2rem;
     }
-    .mac_air_cont1
-    {
+
+    .mac_air_cont1 {
         width: 100%;
         padding: 0.5rem auto;
     }
-    .night .mac_air_cont1
-    {
+
+    .night .mac_air_cont1 {
         width: 100%;
         padding: 0.5rem auto;
     }
-    .mac_air
-    {
+
+    .mac_air {
         background-image: url("./images/hero_macbookair__el7scava26mq_medium_2x.png");
     }
-    .night .mac_air
-    {
-        background:linear-gradient(rgba(64, 62, 62, 0.371),rgba(45, 44, 44, 0.45)),url("./images/hero_macbookair__el7scava26mq_medium_2x.png");
-        background-size:cover;
+
+    .night .mac_air {
+        background: linear-gradient(rgba(64, 62, 62, 0.371), rgba(45, 44, 44, 0.45)), url("./images/hero_macbookair__el7scava26mq_medium_2x.png");
+        background-size: cover;
         background-position: center;
-    background-repeat: no-repeat;
+        background-repeat: no-repeat;
     }
-    .mac_air_title h1
-    {
+
+    .mac_air_title h1 {
         padding: 0rem;
     }
-    .buy
-    {
+
+    .buy {
         padding: 0.5rem;
     }
-    .mac_pro_book
-    {
+
+    .mac_pro_book {
         background-image: url("./images/hero_mbp13__f88jcbca0ve6_small_2x.jpg");
     }
-    .night .mac_pro_book{
+
+    .night .mac_pro_book {
         background-image: url("./images/hero_mbp13__f88jcbca0ve6_small_2x.jpg");
     }
-   
-    
+
+
 
 }
-@media screen and (max-width:800px)
-{
-    .cashback_cont p{
+
+@media screen and (max-width:800px) {
+    .cashback_cont p {
         display: none;
     }
 }
 
-@media screen and (max-width:530px)
-{
-    .mac_pro_charge , .mac_air_charge
-    {
+@media screen and (max-width:530px) {
+
+    .mac_pro_charge,
+    .mac_air_charge {
         background-size: 70%;
         width: 70%;
         height: 2.5rem;
     }
-   .night .mac_pro_charge ,.night  .mac_air_charge
-    {
+
+    .night .mac_pro_charge,
+    .night .mac_air_charge {
         background-size: 70%;
         width: 70%;
         height: 2.5rem;
-    } 
-    .rose
-    {
+    }
+
+    .rose {
         background-size: 70%;
         width: 70%;
         height: 7.5rem;
     }
-    .tv_title
-    {
+
+    .tv_title {
         width: 80%;
         margin: auto;
     }
-    .mac_air_title h1, .mac_pro_title h1 , .get_title h1
-    {
+
+    .mac_air_title h1,
+    .mac_pro_title h1,
+    .get_title h1 {
         font-size: 1.5rem;
     }
-    .night .mac_air_title h1,.night .mac_pro_title h1 ,.night .get_title h1
-    {
+
+    .night .mac_air_title h1,
+    .night .mac_pro_title h1,
+    .night .get_title h1 {
         font-size: 1.5rem;
     }
-    .mac_air , .mac_pro_book , .get_airpods
-    {
+
+    .mac_air,
+    .mac_pro_book,
+    .get_airpods {
         height: 39rem;
     }
-    .night .mac_air ,.night .mac_pro_book ,.night .get_airpods
-    {
+
+    .night .mac_air,
+    .night .mac_pro_book,
+    .night .get_airpods {
         height: 39rem;
     }
 
@@ -1003,32 +1062,31 @@ color: white;
 /* ------------- Listing -------------- */
 
 
-#filters
-{
+#filters {
     background-color: white;
     position: sticky;
     top: 39px;
     z-index: 3;
     border-bottom: 1px solid lightgrey;
 }
-.find_options img
-{
+
+.find_options img {
     display: block;
     width: 2rem;
     padding: 1rem;
 
 }
-.find_options_img
-{
+
+.find_options_img {
     border-radius: 50%;
     overflow: hidden;
     width: 4rem;
-    height:4rem;
-    float:left;
+    height: 4rem;
+    float: left;
     background: rgb(252, 238, 192);
 }
-.find_options span span
-{
+
+.find_options span span {
     display: block;
     padding: 1.2rem;
     width: fit-content;
@@ -1036,24 +1094,26 @@ color: white;
     font-size: 1.5rem;
     font-weight: 500;
 }
-#nightlife, #dining
-{
-     background-color:rgba(132, 129, 129, 0.101);
+
+#nightlife,
+#dining {
+    background-color: rgba(132, 129, 129, 0.101);
 }
-#find_head_cont3_1 ,#find_head_cont3_2,#find_head_cont3_3
-{
+
+#find_head_cont3_1,
+#find_head_cont3_2,
+#find_head_cont3_3 {
     display: inline-block;
     height: 100%;
-    margin: 0rem 0.9rem 0rem 0rem ;
-} 
-#find_head_cont3_1 
-{
+    margin: 0rem 0.9rem 0rem 0rem;
+}
+
+#find_head_cont3_1 {
     border-bottom: 2px solid red;
 }
 
 /* filter */
-#find_head_cont4
-{
+#find_head_cont4 {
     padding: 1rem 0rem;
     overflow: hidden;
     position: sticky;
@@ -1062,13 +1122,13 @@ color: white;
     width: 90%;
     margin: auto;
 }
-.night #filters{
+
+.night #filters {
     background-color: black;
 
 }
 
-.fiter_buttons
-{
+.fiter_buttons {
     width: fit-content;
     float: left;
     cursor: pointer;
@@ -1078,39 +1138,39 @@ color: white;
     border: 1px solid rgba(142, 139, 139, 0.684);
     color: black;
 }
- .night .fiter_buttons
- {
+
+.night .fiter_buttons {
     color: white;
     background-color: black;
     border-color: lightgrey;
- }
-.fiter_buttons span
-{
+}
+
+.fiter_buttons span {
     padding: 6px 11px;
     display: block;
 }
-.fiter_buttons span i
-{
+
+.fiter_buttons span i {
     margin-right: 6px;
 }
+
 /* find_inspiration" */
 
-#find_inspiration
-{
-background-color: rgba(243, 243, 243, 0.653);
+#find_inspiration {
+    background-color: rgba(243, 243, 243, 0.653);
 }
-#inspi_cont1
-{
-max-width: 1024px;
-width: 90%;
-margin: auto;
+
+#inspi_cont1 {
+    max-width: 1024px;
+    width: 90%;
+    margin: auto;
 }
-#inspi_head >h1
-{
-font-size: 2rem;
-font-weight: 400;
-margin: 0rem;
-padding-top: 16px;
+
+#inspi_head>h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0rem;
+    padding-top: 16px;
 }
 
 
@@ -1118,295 +1178,312 @@ padding-top: 16px;
 /* ------ food_items_display ------ */
 
 
-#food_loading_area
-{
+#food_loading_area {
     color: black;
-width:100%;
+    width: 100%;
 
 }
-.food_loading_area_2
-{
-width: 90%;
-max-width: 1024px;
-overflow: hidden;
-margin: auto;
-padding:3rem;
-display: flex;
-flex-wrap:wrap;
-flex-direction: row;
-justify-content: space-between;
+
+.food_loading_area_2 {
+    width: 90%;
+    max-width: 1024px;
+    overflow: hidden;
+    margin: auto;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
-.food_item_card
-{
-flex: 0 0 32%;
-background-color: white;
-overflow: hidden;
-transition: 0.5s all;
-margin: 1rem 0rem;
-border-radius: 10px;
-transition: 0.3s all;
+
+.food_item_card {
+    flex: 0 0 32%;
+    background-color: white;
+    overflow: hidden;
+    transition: 0.5s all;
+    margin: 1rem 0rem;
+    border-radius: 10px;
+    transition: 0.3s all;
 }
-.night .food_item_card{
+
+.night .food_item_card {
     background-color: black;
     color: white;
 }
-.food_item_info ,.food_stats
-{
-padding: 10px;
-}
-.food_img {
-margin: 10px;
-margin-top: 10px;
-display: flex;
-justify-content: center;
-background-position: center;
-height: 14rem;
-border-radius: 10px;
-align-items: center;
-}
-.food_img img
-{
 
-height: 12rem;
-display: block;
-transition: 0.5s all;
-border-radius: 10px;
+.food_item_info,
+.food_stats {
+    padding: 10px;
 }
-.food_item_card:hover img{
+
+.food_img {
+    margin: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    height: 14rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.food_img img {
+
+    height: 12rem;
+    display: block;
+    transition: 0.5s all;
+    border-radius: 10px;
+}
+
+.food_item_card:hover img {
     transform: scale(1.1);
 }
-.food_name ,.food_cousine
-{
-overflow: hidden;
-display: flex;
-justify-content: left;
-flex: 70% 30%;
+
+.food_name,
+.food_cousine {
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    flex: 70% 30%;
 
 
 }
-.food_name p
-{
-font-size: 18px;
-text-transform:capitalize;
+
+.food_name p {
+    font-size: 18px;
+    text-transform: capitalize;
 }
-.food_name p, .food_cousine p
-{
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
-overflow: hidden;
-margin: 0px;
+
+.food_name p,
+.food_cousine p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0px;
 
 }
-.food_price p{
-margin:0px;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
+
+.food_price p {
+    margin: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
-.food_rating,.food_price
-{
-overflow: hidden;
-display: flex;
-flex-wrap: nowrap;
-justify-content: right;
 
-}
-.food_item_info_cont2 ,.food_item_info_cont1{
-
-width: 100%;
-display: flex;
-justify-content: space-between;
-
+.food_rating,
+.food_price {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
 
 }
+
+.food_item_info_cont2,
+.food_item_info_cont1 {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
 .food_item_info_cont2 {
-margin-top: 10px;
+    margin-top: 10px;
 }
-.food_rating p{
-background-color: green;
-color: white;
-border-radius: 5px;padding: 3px;
-font-size: small;
-margin:0px;
-white-space:nowrap;
-width: 40px;
-overflow: hidden;
+
+.food_rating p {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: small;
+    margin: 0px;
+    white-space: nowrap;
+    width: 40px;
+    overflow: hidden;
 }
-.food_price p,.food_cousine p
-{
-color: rgb(141, 138, 138);
-font-weight: 200;
-font-size: 14px;
+
+.food_price p,
+.food_cousine p {
+    color: rgb(141, 138, 138);
+    font-weight: 200;
+    font-size: 14px;
 }
-.food_stats p
-{
-margin: 6px 0px;
-clear: both;
-font-size: 11px;
+
+.food_stats p {
+    margin: 6px 0px;
+    clear: both;
+    font-size: 11px;
 
 }
-.food_stats
-{
-margin: 6px ,0px;
-display: flex;
-justify-content: space-between;
+
+.food_stats {
+    margin: 6px, 0px;
+    display: flex;
+    justify-content: space-between;
 }
-.food_stats > img
-{
-width: 50px;
-height: 20px;
-margin: 6px 0px;
+
+.food_stats>img {
+    width: 50px;
+    height: 20px;
+    margin: 6px 0px;
 }
-.food_item_card:hover
-{
-box-shadow: 0px 0px 10px 6px #88888870;
-cursor: pointer;
+
+.food_item_card:hover {
+    box-shadow: 0px 0px 10px 6px #88888870;
+    cursor: pointer;
 }
 
 
 /* ------- show filterrs ----- */
 
-.show_filters
-{
-position: fixed;
-display: none;
-height: 100vh;
-width: 100vw;
-overflow: scroll;
-top: 0px;
-background-color: rgba(0, 0, 0, 0.742);
+.show_filters {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.742);
 }
-.show_filters.sho{
-display: flex;
-align-items: center;
-color: black;
-}
-.show_filters_2
-{
 
-max-width: 660px;
-background-color: white;
-margin: 4rem auto;
-z-index: 11;
-width: 100%;
-height:30rem;
-border-radius: 10px;
+.show_filters.sho {
+    display: flex;
+    align-items: center;
+    color: black;
 }
-.show_filters_2 > h1
-{
-float: left;
-font-size: 1.6rem;
-font-weight: 700;
-width: 70%;
-margin:1.8rem 0rem 1.5rem 1rem;
-}
-.show_filters_2 i{
-float: right;
-cursor: pointer;
-margin: 1.3rem 1.3rem 0rem 0rem;
-}
-.tabs
-{
-width: 100%;
-align-items: center;
-overflow: hidden;
-height: 67%;
-border-top: 1px solid lightgrey;
-border-bottom: 1px solid lightgray;
 
-}
-.active{
-background-color:white;
-border-left:0.7rem solid red;
+.show_filters_2 {
 
+    max-width: 660px;
+    background-color: white;
+    margin: 4rem auto;
+    z-index: 11;
+    width: 100%;
+    height: 30rem;
+    border-radius: 10px;
 }
-.label.active:hover{
-background-color:white;
-border-left:0.7rem solid red;
+
+.show_filters_2>h1 {
+    float: left;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 70%;
+    margin: 1.8rem 0rem 1.5rem 1rem;
 }
-.option.sho{
-display: block;
+
+.show_filters_2 i {
+    float: right;
+    cursor: pointer;
+    margin: 1.3rem 1.3rem 0rem 0rem;
+}
+
+.tabs {
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+    height: 67%;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgray;
 
 }
 
+.active {
+    background-color: white;
+    border-left: 0.7rem solid red;
 
-.label >h1
-{
-margin: 0px;
-padding-left: 10px;
-font-size: 16px;
-font-weight: 400;
-color: rgba(0, 0, 0, 0.672);
 }
-.labels
-{
 
-width: 30%;
-float: left;
-height: 100%;
-align-items: center;
-display: flex;
-flex-direction: column;
-height: 100%;
-color: rgba(0, 0, 0, 0.82);
-background-color: rgba(211, 211, 211, 0.526);
+.label.active:hover {
+    background-color: white;
+    border-left: 0.7rem solid red;
 }
-.label_output
-{
-width: 68%;
-padding: 1.7rem 0rem;
-float: left;
-color: rgba(0, 0, 0, 0.505);
-height: 100%;
-}
-.label{
-height: 25%;
-width: 100%;
-cursor: pointer;
-align-items: center;
-padding-top: 30px;
-overflow: hidden;
-}
-.label_output form
-{
-display: flex;
-flex-direction: column;
-}
-.label_output form .radios
-{
-margin: 1rem 0rem 0rem 1rem;
-align-items: center;
 
-display: flex;
+.option.sho {
+    display: block;
+
 }
-.label_output form  div input[type="radio"]
-{
-width: 1.2rem;
-height:1.2rem;
-cursor: pointer;
-margin: 0px 10px;
-color:red;
-background-color: red;
+
+
+.label>h1 {
+    margin: 0px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.672);
 }
-.label_output form  div input[type="radio"]:checked::after
-{
-width: 12px;
+
+.labels {
+
+    width: 30%;
+    float: left;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.82);
+    background-color: rgba(211, 211, 211, 0.526);
+}
+
+.label_output {
+    width: 68%;
+    padding: 1.7rem 0rem;
+    float: left;
+    color: rgba(0, 0, 0, 0.505);
+    height: 100%;
+}
+
+.label {
+    height: 25%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.label_output form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label_output form .radios {
+    margin: 1rem 0rem 0rem 1rem;
+    align-items: center;
+
+    display: flex;
+}
+
+.label_output form div input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    margin: 0px 10px;
+    color: red;
+    background-color: red;
+}
+
+.label_output form div input[type="radio"]:checked::after {
+    width: 12px;
     height: 12px;
     border-radius: 15px;
     right: -3.2px;
-    top:3.4px;
-    
+    top: 3.4px;
+
     position: relative;
     background-color: red;
     content: '';
     display: inline-block;
     visibility: visible;
 }
-.label_output form .radios  label:before
-{
-width: 1rem;
+
+.label_output form .radios label:before {
+    width: 1rem;
     height: 1rem;
     border-radius: 15px;
     margin-left: -1.9rem;
@@ -1414,7 +1491,7 @@ width: 1rem;
     cursor: pointer;
     top: 1.7px;
     position: relative;
-    background-color:transparent;
+    background-color: transparent;
     content: '';
     display: inline-block;
     visibility: visible;
@@ -1423,80 +1500,139 @@ width: 1rem;
 
 
 
-.label_output #rad  {
-display: flex;
-justify-content: space-around;
-flex-direction: row;
-flex-wrap: wrap;
-align-items: center;
+.label_output #rad {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.label_output #rad .checks{
-flex: 0 0 40%;
-display: flex;
-margin-top: 1rem;
-margin-left: 1rem;
-align-items: center;
-align-self: center;
+
+.label_output #rad .checks {
+    flex: 0 0 40%;
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    align-self: center;
 }
-.label_output #rad .checks label{
-margin-left: 1rem;}
+
+.label_output #rad .checks label {
+    margin-left: 1rem;
+}
+
 .slider {
--webkit-appearance: none;
-width: 90%;
-height: 13px;
-background: #d3d3d3;
-outline: none;
-opacity: 0.7;
--webkit-transition: .2s;
-transition: opacity .2s;
-border-radius: 5px;
-margin-top: 7rem;
-margin-left: 1.3rem;
+    -webkit-appearance: none;
+    width: 90%;
+    height: 13px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+    margin-top: 7rem;
+    margin-left: 1.3rem;
 }
 
 .slider:hover {
-opacity: 1;
+    opacity: 1;
 }
 
 .slider::-webkit-slider-thumb {
--webkit-appearance: none;
-appearance: none;
-width: 20px;
-height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
 
-border-radius: 50%;
-background: red;
-cursor: pointer;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-width: 25px;
-height: 25px;
-background: red;
-cursor: pointer;
-}
-.bottom_buttons{
-display: flex;
-justify-content: flex-end;
-}
-.bottom_buttons button{
-
-background-color: red;
-color: white;
-border-radius: 10px;
-border: none;
-padding: 10px;
-margin: 20px;
-
-}
-.label:hover
-{
-background-color: rgba(211, 211, 211, 0.45);
+    width: 25px;
+    height: 25px;
+    background: red;
+    cursor: pointer;
 }
 
+.bottom_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom_buttons button {
+
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.label:hover {
+    background-color: rgba(211, 211, 211, 0.45);
+}
 
 
-.fiter_buttons:hover
-{
-background-color: rgba(211, 211, 211, 0.332);
+
+.fiter_buttons:hover {
+    background-color: rgba(211, 211, 211, 0.332);
+}
+
+
+/* -------------------- Product-info------------ */
+.Product-info {
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.product-left-container {
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column;
+}
+
+.product-image {
+    display: block;
+    height: 30vh;
+    width: 100%;
+}
+
+.product-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.buy-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buy-now {
+    display: flex;
+    align-items: center;
+    background-color: #ff9f00;
+    padding: 10px 30px;
+    color: #f5f5f7;
+    flex: 1 0 20%;
+    justify-content: center;
+
+
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    background: #fb641b;
+    ;
+    padding: 10px 30px;
+    color: #f5f5f7;
+    flex: 1 0 20%;
+    justify-content: center;
 }
