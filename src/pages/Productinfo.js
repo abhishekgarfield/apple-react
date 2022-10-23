@@ -6,6 +6,7 @@ import {
   Search,
   Settings,
   Tune,
+  Star,
   ShoppingCart,
   FlashOn,
 } from "@material-ui/icons";
@@ -44,7 +45,7 @@ const Productinfo = () => {
               Buy
             </div>
             <div className="add-to-cart">
-              <ShoppingCart style={{ fontSize: 20, marginRight: 5 }} /> add to
+              <ShoppingCart style={{ fontSize: 20, marginRight: 5 }} /> Add to
               cart
             </div>
           </div>
@@ -54,7 +55,23 @@ const Productinfo = () => {
             {product ? product["Product name"] : "hello"}
           </div>
           <div className="product-reviews">
-            <div className="product-rating"></div>
+            <div className="product-rating">
+                <div className="rating-tab">
+                {product?.product_rating}
+                <Star style={{fontSize:15,marginLeft:3}}/>
+                
+                </div>
+                <div className="random-ratings">
+                {`${Math.floor(Math.random()*100000)+20000} Ratings & ${Math.floor(Math.random()*100000)+20000} Reviews`}
+                </div>
+            </div>
+          </div>
+          <div className="discount">
+            {`Extra ₹${2000} off`}
+          </div>
+          <div className="Product-price">
+            {`₹${product?.product_price}`}
+            <del>{`₹${product.product_price+2000}`}</del>
           </div>
           <div className="Product-spexifications">
             <div className="title-for-specs">
