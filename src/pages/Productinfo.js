@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   Star,
   ShoppingCart,
   FlashOn,
 } from "@material-ui/icons";
 import Navbar from "../components/navbar";
+import { useDispatch } from "react-redux";
+import { additems } from "../Reducers/basketslice";
 
 const Productinfo = () => {
+    const navigate=useNavigate();
+    const dispatch=useDispatch();
   var { product_id } = useParams();
   const [product, setproduct] = useState(null);
   const loadProducts = () => {
@@ -35,11 +39,18 @@ const Productinfo = () => {
             <img src={product?.product_url} />
           </div>
           <div className="buy-options">
-            <div className="buy-now">
-              <FlashOn style={{ fontSize: 20, marginRight: 5 }} />
+            <div className="buy-now" onClick={()=>{
+              dispatch(additems(product));
+              navigate("/cart");
+              
+            }}>
+              <FlashOn style={{ fontSize: 20, marginRight: 5 }}  />
               Buy
             </div>
-            <div className="add-to-cart">
+            <div className="add-to-cart" onClick={()=>{
+              dispatch(additems(product));
+
+            }}>
               <ShoppingCart style={{ fontSize: 20, marginRight: 5 }} /> Add to
               cart
             </div>
