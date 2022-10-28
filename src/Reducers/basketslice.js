@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
-    items:null
+    items:[]
 }
 
 const basket=createSlice({
@@ -9,7 +9,7 @@ const basket=createSlice({
     initialState,
     reducers:{
         additems(state,action){
-            state.items=action.payload;
+            state.items.push(action.payload);
         },
         removeitems:(state,action)=>{
             state.items=action.payload;
