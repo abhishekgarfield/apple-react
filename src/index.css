@@ -2,7 +2,7 @@ body,
 html {
     padding: 0rem;
     margin: 0rem;
-    color: white;
+    color: black;
     width: 100%;
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -1766,4 +1766,61 @@ footer {
     color: rgba(0, 0, 0, 0.375);
     font-size: 15px;
     margin-left: 10px;
+}
+.basket-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 44px;
+
+}
+.Basket-items-container{
+display:  flex;
+justify-content: space-between;
+flex-direction: row;
+border-bottom: 1px solid lightgrey;
+padding: 10px;
+}
+.Basket-items-container:nth-child(1)
+{
+    font-weight: 600;
+    font-size: 16px;
+}
+.Basketcont{
+    display: flex;
+    justify-content: center;
+}
+.item-count{
+    display: flex;
+    align-items: center;
+}
+.item-count  span{
+    background-color: lightgray;
+    padding: 1px 4px;
+    font-size: 12px;
+
+}
+.item-count i {
+    background-color: rgb(74, 176, 74);
+    padding: 4px;
+    font-size: 10px;
+    border-radius: 2px;
+}
+.Totalinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.Totalinfo span{
+    display: flex;
+    align-self: flex-end;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.594);
+}
+.Totalinfo span:nth-child(3)
+{
+    border-bottom: 1px solid black;
 }
