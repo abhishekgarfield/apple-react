@@ -64,9 +64,9 @@ const Basket = () => {
           })}
           <div className="Totalinfo">
           <span> {`Total price ₹${totalprice}`}</span> 
-          <span>{`Delivery fee ₹${200}`}</span> 
-          <span>{`Discount ₹${2000}`}</span> 
-          <span> {`Total ₹${totalprice-200-2000}`}</span> 
+          <span>{`Delivery fee ₹${totalprice==0?0: 200}`}</span> 
+          <span>{`Discount ₹${totalprice==0?0:2000}`}</span> 
+          <span> {`Total ₹${totalprice && totalprice+200-2000}`}</span> 
           </div>
       </div>
     </div>
