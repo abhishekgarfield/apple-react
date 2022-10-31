@@ -51,7 +51,7 @@ const [Products,setproducts]=useState(null);
   }
   useEffect(() => {
     loadProducts();
-  }, []);
+  }, [category_id]);
 
   return (
     <>
