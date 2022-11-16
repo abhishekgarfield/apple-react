@@ -11,7 +11,7 @@ import { additems } from "../Reducers/basketslice";
 
 const Productinfo = () => {
     const navigate=useNavigate();
-    const dispatch=useDispatch();
+    const dispatch=useDispatch(); //
   var { product_id } = useParams();
   const [product, setproduct] = useState(null);
   const loadProducts = () => {
