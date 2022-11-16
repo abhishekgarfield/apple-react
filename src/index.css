@@ -1527,7 +1527,6 @@ footer {
 }
 
 .slider {
-    -webkit-appearance: none;
     width: 90%;
     height: 13px;
     background: #d3d3d3;
