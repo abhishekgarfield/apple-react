@@ -13,7 +13,7 @@ const Basket = () => {
     var totalprice = 0;
     state.basket.items.map(({ product_price }) => {
       totalprice += product_price;
-    });
+    }); //
     return totalprice;
   });
 
