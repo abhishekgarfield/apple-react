@@ -8,7 +8,7 @@ const Basket = () => {
   const [Groupeditems, setGroupeditems] = useState(null);
   const items = useSelector((state) => {
     return state.basket.items;
-  });
+  }); //
   const totalprice = useSelector((state) => {
     var totalprice = 0;
     state.basket.items.map(({ product_price }) => {
