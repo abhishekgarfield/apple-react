@@ -34,7 +34,7 @@ const Basket = () => {
   console.log(Groupeditems);
   return (
     <div className="Basketcont">
-      <Navbar />
+      <Navbar /> 
       <div className="basket-container">
         <div className="Basket-items-container">
           <div className="item-count">
